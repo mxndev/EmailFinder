@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		372D8C530437ECCC70DCC632 /* Pods_EmailFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D1D21E0D861E3B18592CD4 /* Pods_EmailFinder.framework */; };
+		9FB3554BDAD192F3AD174B56 /* Pods_EmailFinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0AC5075256110F14FE8665 /* Pods_EmailFinderTests.framework */; };
 		D01EEB74250408D400B09EC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01EEB73250408D400B09EC7 /* AppDelegate.swift */; };
 		D01EEB76250408D400B09EC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01EEB75250408D400B09EC7 /* ContentView.swift */; };
 		D01EEB78250408D900B09EC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D01EEB77250408D900B09EC7 /* Assets.xcassets */; };
@@ -26,6 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		077284B2F85ABAEDF52A8CCD /* Pods-EmailFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmailFinder.release.xcconfig"; path = "Target Support Files/Pods-EmailFinder/Pods-EmailFinder.release.xcconfig"; sourceTree = "<group>"; };
+		8FC90BEF146F38E6266CF3D1 /* Pods-EmailFinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmailFinderTests.debug.xcconfig"; path = "Target Support Files/Pods-EmailFinderTests/Pods-EmailFinderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		928247C4F101E07C6390FE61 /* Pods-EmailFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmailFinder.debug.xcconfig"; path = "Target Support Files/Pods-EmailFinder/Pods-EmailFinder.debug.xcconfig"; sourceTree = "<group>"; };
+		9E8F0470C6E54920BB77EB65 /* Pods-EmailFinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmailFinderTests.release.xcconfig"; path = "Target Support Files/Pods-EmailFinderTests/Pods-EmailFinderTests.release.xcconfig"; sourceTree = "<group>"; };
 		D01EEB70250408D400B09EC7 /* EmailFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmailFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D01EEB73250408D400B09EC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D01EEB75250408D400B09EC7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,6 +43,8 @@
 		D01EEB85250408D900B09EC7 /* EmailFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmailFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D01EEB89250408D900B09EC7 /* EmailFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailFinderTests.swift; sourceTree = "<group>"; };
 		D01EEB8B250408D900B09EC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1D1D21E0D861E3B18592CD4 /* Pods_EmailFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmailFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA0AC5075256110F14FE8665 /* Pods_EmailFinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmailFinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				372D8C530437ECCC70DCC632 /* Pods_EmailFinder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,18 +60,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FB3554BDAD192F3AD174B56 /* Pods_EmailFinderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		908E384E700BF6A55623B145 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1D1D21E0D861E3B18592CD4 /* Pods_EmailFinder.framework */,
+				EA0AC5075256110F14FE8665 /* Pods_EmailFinderTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9287D6908A03E0338D4F09C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				928247C4F101E07C6390FE61 /* Pods-EmailFinder.debug.xcconfig */,
+				077284B2F85ABAEDF52A8CCD /* Pods-EmailFinder.release.xcconfig */,
+				8FC90BEF146F38E6266CF3D1 /* Pods-EmailFinderTests.debug.xcconfig */,
+				9E8F0470C6E54920BB77EB65 /* Pods-EmailFinderTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D01EEB67250408D400B09EC7 = {
 			isa = PBXGroup;
 			children = (
 				D01EEB72250408D400B09EC7 /* EmailFinder */,
 				D01EEB88250408D900B09EC7 /* EmailFinderTests */,
 				D01EEB71250408D400B09EC7 /* Products */,
+				9287D6908A03E0338D4F09C7 /* Pods */,
+				908E384E700BF6A55623B145 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,9 +146,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D01EEB8E250408D900B09EC7 /* Build configuration list for PBXNativeTarget "EmailFinder" */;
 			buildPhases = (
+				E0745EFC24BCD9C209FDC3B0 /* [CP] Check Pods Manifest.lock */,
 				D01EEB6C250408D400B09EC7 /* Sources */,
 				D01EEB6D250408D400B09EC7 /* Frameworks */,
 				D01EEB6E250408D400B09EC7 /* Resources */,
+				FD541938326A9C39341A6C02 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,6 +165,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D01EEB91250408D900B09EC7 /* Build configuration list for PBXNativeTarget "EmailFinderTests" */;
 			buildPhases = (
+				8BC01D2D0FB66E6D95AC78A8 /* [CP] Check Pods Manifest.lock */,
 				D01EEB81250408D900B09EC7 /* Sources */,
 				D01EEB82250408D900B09EC7 /* Frameworks */,
 				D01EEB83250408D900B09EC7 /* Resources */,
@@ -201,6 +237,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8BC01D2D0FB66E6D95AC78A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EmailFinderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0745EFC24BCD9C209FDC3B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EmailFinder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD541938326A9C39341A6C02 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmailFinder/Pods-EmailFinder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmailFinder/Pods-EmailFinder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmailFinder/Pods-EmailFinder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D01EEB6C250408D400B09EC7 /* Sources */ = {
@@ -357,6 +457,7 @@
 		};
 		D01EEB8F250408D900B09EC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 928247C4F101E07C6390FE61 /* Pods-EmailFinder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = EmailFinder/EmailFinder.entitlements;
@@ -378,6 +479,7 @@
 		};
 		D01EEB90250408D900B09EC7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 077284B2F85ABAEDF52A8CCD /* Pods-EmailFinder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = EmailFinder/EmailFinder.entitlements;
@@ -399,6 +501,7 @@
 		};
 		D01EEB92250408D900B09EC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FC90BEF146F38E6266CF3D1 /* Pods-EmailFinderTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -420,6 +523,7 @@
 		};
 		D01EEB93250408D900B09EC7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E8F0470C6E54920BB77EB65 /* Pods-EmailFinderTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

@@ -1,0 +1,22 @@
+PODS:
+  - Postal (0.5.0):
+    - Postal/Core (= 0.5.0)
+  - Postal/Core (0.5.0):
+    - Result (~> 3.2)
+  - Result (3.2.4)
+
+DEPENDENCIES:
+  - Postal
+
+SPEC REPOS:
+  trunk:
+    - Postal
+    - Result
+
+SPEC CHECKSUMS:
+  Postal: f131b117770a6238241222bb1a53dca0dc4bd561
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+
+PODFILE CHECKSUM: 8d5e74a953291edae159bdcb9848548fb58e03c9
+
+COCOAPODS: 1.9.1
