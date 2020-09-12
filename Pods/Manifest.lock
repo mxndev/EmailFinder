@@ -1,22 +1,29 @@
 PODS:
-  - Postal (0.5.0):
-    - Postal/Core (= 0.5.0)
-  - Postal/Core (0.5.0):
-    - Result (~> 3.2)
-  - Result (3.2.4)
+  - Postal (0.5.0)
+  - Swinject (2.7.1)
 
 DEPENDENCIES:
-  - Postal
+  - Postal (from `https://github.com/snipsco/Postal.git`, branch `master`)
+  - Swinject
 
 SPEC REPOS:
   trunk:
-    - Postal
-    - Result
+    - Swinject
+
+EXTERNAL SOURCES:
+  Postal:
+    :branch: master
+    :git: https://github.com/snipsco/Postal.git
+
+CHECKOUT OPTIONS:
+  Postal:
+    :commit: 1e107ef8d497432b24c2e105f87ec556beea0f20
+    :git: https://github.com/snipsco/Postal.git
 
 SPEC CHECKSUMS:
-  Postal: f131b117770a6238241222bb1a53dca0dc4bd561
-  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  Postal: b3a984084ce3777a8a0a08843c229c11fb79a97f
+  Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
 
-PODFILE CHECKSUM: 8d5e74a953291edae159bdcb9848548fb58e03c9
+PODFILE CHECKSUM: 56fc25100d4d4a1a50ee1f231e2528317b68d57c
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.3

@@ -7,7 +7,6 @@
 //
 
 import Cocoa
-import SwiftUI
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -17,8 +16,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Create the SwiftUI view that provides the window contents.
+        //t9m4yzcykds8xqga
         
-        RunLoop.main.run()
+        MailboxDownloaderViewModel.instance.fetchAllMessages()
+        
+//        RunLoop.main.run()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

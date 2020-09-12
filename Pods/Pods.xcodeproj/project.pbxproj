@@ -3,75 +3,96 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08C83FA7F6436CE72B25415FD322F70B /* IMAPNamespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC52B55770A6BBA57222351F803D516 /* IMAPNamespace.swift */; };
-		0D655A68077089F99133581575C39E93 /* IMAPSession+Fetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D34E42B60A51A6F2E2AFEF3F0A09613 /* IMAPSession+Fetch.swift */; };
-		21E6C7DF8B6A4A5B179A36B425890E58 /* Result-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA04E7FB313C0AD2B18E06429FF9BDBA /* Result-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		24C15309ADF0E06F5B663E4AF5087088 /* MimeFields+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75653F2B665A652A7F509F37DE0C3E3A /* MimeFields+Parsing.swift */; };
-		253D50F94456357BF9DDACD357F23DE7 /* FetchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCFEB647C531A32A16C679307E6CEBD /* FetchResult.swift */; };
-		25B8AB6D4CD9646B90D0F5A09FCC0E40 /* PostalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2290EBAEDEA130882A00DE8C15FF4ACA /* PostalError.swift */; };
-		2AD159348DFF20001F8EDB059AD9CB78 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF19236D195569F19988CF1DD5D84935 /* Logger.swift */; };
-		3004AA6827F47CE328D3B7FEF7A70164 /* IMAPSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B166BF62DB4AADCF4C5C0A47BCC188D /* IMAPSession.swift */; };
-		31D6FCAA119D61ABF5788C69125F5E1A /* Pods-EmailFinder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C414F32F750EBCBFD30D0CDB1618E9A /* Pods-EmailFinder-dummy.m */; };
-		31DA40110CA5CEA991ECD520098F9BF5 /* Libetpan+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDC8DFBA8E7FC11E2535CB55791B8E /* Libetpan+Util.swift */; };
-		35977CCB332437B1097623C34145E639 /* IMAPIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0509872721E5D5ED3B814EF5D95210 /* IMAPIdentity.swift */; };
-		3D8B535312C1A7EC3D80930FD728D9C8 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D71D4DF6AF6ADCEE8F8206A79D39720 /* Result.framework */; };
-		4BDCCFB2EBE78038CFBD0396CDCB3BE8 /* Address+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6334B9E447AB322B73ECBF6804BF8528 /* Address+Parsing.swift */; };
-		4F25D58DA4AA032E8B04BD105594BD1F /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBBCACC488B849904562B54FD6BD138 /* Util.swift */; };
-		5251BD1B1C654360E71922573DC9BE46 /* Pods-EmailFinder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DB94DC7A6525D4D846A1D9155F03E62C /* Pods-EmailFinder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		54FF8955865C880C18C2C631EA9CDE43 /* IMAPSession+Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F799EBD7CFF2DE2C85A668E3180DFE7 /* IMAPSession+Move.swift */; };
-		556F889A95B50A50D301FD088B70B60F /* ContentEncoding+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6130226DA9E9FD15248EF5435373E3E4 /* ContentEncoding+Parsing.swift */; };
-		57550175173BD5555AF619C357CE6BC6 /* MailPart+Enumeration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D00D6F54927798B3F7F2D8CF45107C /* MailPart+Enumeration.swift */; };
+		0320BF6A9F60413E4CF1E8CFF0E5B6A4 /* Swinject.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CD5B838D7820BC6C6AAD31106E8B16A /* Swinject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		050C568E3BA73173980F463DFB08778B /* ServiceEntry.TypeForwarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BFD1083D786A2CDDEAC6B0746B27F7 /* ServiceEntry.TypeForwarding.swift */; };
+		0B4C5F38682EE4ABBA0A406C5B45897C /* GraphIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FA042AF584BF2FC2A3C3CB47FD8AAD /* GraphIdentifier.swift */; };
+		0E67049ECD1CB93098B7DA486A0D8CE1 /* MailData+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25541AF3F29ED67DD29502EEFA89C2DD /* MailData+Decode.swift */; };
+		12015E8F1145CB5D99F0D9BF5AD0F3A1 /* ObjectScope.Standard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3E8FCE0AB9C0B3579D41B963D7BF4D /* ObjectScope.Standard.swift */; };
+		1BF47F657C5E5128941940BB97C7EADA /* Extension+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C6EBF5142133A653339F9421617804 /* Extension+Parsing.swift */; };
+		1D48D671015AEA1CD21D0200ED7C1E6F /* MessageHeader+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970E765269A723F552B46E5BB85BE2E /* MessageHeader+Parsing.swift */; };
+		1D66FD7BED1FC46A46F33E685CB1ADA4 /* ServiceEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7725E9EF7EDF123EB8AE6CA07FAE448B /* ServiceEntry.swift */; };
+		1E56E2C8E450F41A8F1DE68A612C2B91 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBCEEFBE6483A8DAB5D50C290C545FE /* Logger.swift */; };
+		2565E16FBE3086C5671A69EC6BE1FF25 /* PostalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E335D0568E9DD980BF43ED2623B807 /* PostalError.swift */; };
+		2BE6C561983E03729CCF1405B3F7FBA8 /* ObjectScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605C3A9FA797670DAC96E1069A3B81F9 /* ObjectScope.swift */; };
+		2C2756B5C834425A5898B49DB81C1D94 /* Libetpan+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D87F20782F7EBBECBB51B43A2942A2A /* Libetpan+Util.swift */; };
+		2DD5198D3A7F3176CB395B0610B1E480 /* SynchronizedResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB345E607C57CE028CD4DEDB5B7EDE62 /* SynchronizedResolver.swift */; };
+		2EE54EC7ECDA42C13C4F48916BFDB12C /* DebugHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C1DF622A577621B81156DA2944213B /* DebugHelper.swift */; };
+		303039803386B5BFD467902899141CD2 /* ServiceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93297D75B83E20EEA5F4924C29AF3F1D /* ServiceKey.swift */; };
+		410D90F0983E136B023488FD8C4031D6 /* InstanceWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9D57BE38543306739C4CCC247EABDF /* InstanceWrapper.swift */; };
+		41120EAA25C099C0A918E88D2222ED59 /* IMAPIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4ACF19449227E90295CA51EC1D5091 /* IMAPIdentity.swift */; };
+		48E0438DFE75DDCDB8408C0373D60FD8 /* MessageAttribute+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896D4DC2F89C10DD00372A4D26F5DD07 /* MessageAttribute+Parsing.swift */; };
+		4AD6B3366120E6DE8AA7D9A01F781158 /* IMAPFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24225C6A5328A860EFEF095CBC18392 /* IMAPFolder.swift */; };
+		4C4218248134D49CD349F0BC5AD11EDC /* UnavailableItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25AB861594F13FEAC965625C1CF582A /* UnavailableItems.swift */; };
+		5474FB639FA51C1899E1DBE4979AF188 /* InstanceStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E5353B69A05079811EB2E3818D29C0 /* InstanceStorage.swift */; };
+		55A49913D357D2D1D709969FEEF0559C /* IMAPSession+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67568B943B9C8CCC980AE86463FA70C /* IMAPSession+Search.swift */; };
+		562D0C180FDE6593236DC433F9289A49 /* MessageFlags+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A91498DAEE2D26C1D8316437E3C6D1E /* MessageFlags+Parsing.swift */; };
 		57D58444379866B44A4D71BB26F0A0CB /* Pods-EmailFinderTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF133F4DE39D300CF1AF85ED6ADFB7E9 /* Pods-EmailFinderTests-dummy.m */; };
-		6FFE1820C6DE6D1A4263AF9B48DF730D /* Postal-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DAD376704EC0AB44E17E1EEF35FFD8 /* Postal-dummy.m */; };
-		713629BDD2EB72B1D5E25AC2836A7F20 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F8A05BE02A5E2BDB00394EB19A06583 /* Cocoa.framework */; };
-		75CAE407DB62BD2608F2E02FDD38FB15 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388652A437757ECB8A68662F38E8347B /* Result.swift */; };
-		7DB373D17D2B719959CFF52C0AFE1681 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F8A05BE02A5E2BDB00394EB19A06583 /* Cocoa.framework */; };
-		8849637A8D77CC02191E467AB7CB94DC /* IMAPSession+List.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AF5E9123A7128E826CB68A010FD03E /* IMAPSession+List.swift */; };
-		90021A446F592537A9B91AB57CCA73C2 /* MessageAttribute+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEE320E6D582CB86919F143A6123C4 /* MessageAttribute+Parsing.swift */; };
-		91F46FAF1C6CEDF63B746BE8F8246440 /* MessageHeader+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D2816366E9A757F22C50F042E4BA40 /* MessageHeader+Parsing.swift */; };
-		936E8E2EEEF641E51E988D5BD9084CAE /* IMAPFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E97332EF9D89A47D5675838BB90B41 /* IMAPFolder.swift */; };
-		962C12322A5687ECBF48664CFD100545 /* ResultProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35930197B10C916BABBE233D5B7E7167 /* ResultProtocol.swift */; };
-		98B53F774C30A1E424E25C3B360F41CC /* IMAPSession+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559807A084889D321EF268D13255EA72 /* IMAPSession+Search.swift */; };
-		B016EF4073BA2118895069A8E2E813B7 /* IMAPSession+Folder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7743FC292D3B00B1E3263C06D7527DE4 /* IMAPSession+Folder.swift */; };
+		595AD299EE64989EC626613B33534DA2 /* ContentEncoding+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB322284B10CCD579C0306EC1AB55C3 /* ContentEncoding+Parsing.swift */; };
+		59A49AF608F61488B0F701EDD2282DCD /* MailPart+Enumeration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C2D4CC71850B2382E2322A188A5917 /* MailPart+Enumeration.swift */; };
+		5B5522003526B92A73CF764CDDE64758 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */; };
+		5E6093189222761DABCF0ABB836CBD3F /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AACAB4EE787E23B8A6CFF4B0DC1E453 /* Resolver.swift */; };
+		5F96704D2C4650A2FB413FED0BA46C08 /* Postal-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 149A4D8DEF10C85936A14B4FF2ADC013 /* Postal-dummy.m */; };
+		607C9ECA706FF0EAD987FF361033E92E /* CertificateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC86DE56C676F16FD364D4257DB621E1 /* CertificateUtils.swift */; };
+		6139236F1E6F367EA321E01B703E183E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */; };
+		620F692A24865770EA9AE6BDAEA40D0D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */; };
+		6319FC7C07929DF559B1F43E8C426D4F /* Postal-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E84F272A3E2CA286118C80B0EB9EAB37 /* Postal-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F14D5991C0E7E7FE61ECC622A73422A /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC380717A7035213025B81DEE255536 /* Assembly.swift */; };
+		713629BDD2EB72B1D5E25AC2836A7F20 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */; };
+		75DD5C3A2FADE15B645BD46CDAC19BDA /* Logger+IMAP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3037A567EC2B258E4B7F6276118AE85A /* Logger+IMAP.swift */; };
+		775AE4EF4221148F167CE84254753B22 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C20CB2EF629466D3D345A6FECFBEFF3 /* Configuration.swift */; };
+		797F78E38B84AD04989D285EA28FBFEC /* SynchronizedResolver.Arguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6F1157D18511E7C2F0B60B3C5E741A /* SynchronizedResolver.Arguments.swift */; };
+		7CD92B345D1D6558C44749DE5239BEF4 /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182BF3DD3CF34D3DA991AF0838C0AFEF /* Assembler.swift */; };
+		7D4DA079848B3E2E1F71DA76FA431194 /* Swinject-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C6FC00ACFFBC54E452271F5040F2672 /* Swinject-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7FE5602CAB3DF1F458C7B05777DD97BF /* IMAPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CCE2FA0F37F23111D20F6227147559 /* IMAPError.swift */; };
+		8163F27756B9177A85B6C6DBC4C3E0FA /* IMAPSession+Fetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD146C5860F72534D44ABFC6EE268D7 /* IMAPSession+Fetch.swift */; };
+		827C164ED1870132CA68289102312EB2 /* Message+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906364587BF45CA1DB466E9A570F2981 /* Message+Parsing.swift */; };
+		85CB2853C7AEE3593C3EC57F5BBEDD04 /* MimeFields+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F86BF282EF21AD6B9A345E5662B8423 /* MimeFields+Parsing.swift */; };
+		90581E8A3AB126FD958E6283E49928CB /* Pods-EmailFinder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DB94DC7A6525D4D846A1D9155F03E62C /* Pods-EmailFinder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98E449215016363CA0F9AA63F37DB692 /* Pods-EmailFinder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C414F32F750EBCBFD30D0CDB1618E9A /* Pods-EmailFinder-dummy.m */; };
+		A26D8000B95488FED0701DF3FFF315F8 /* _Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED0250FEEAC1B1D42287348AAF8D704 /* _Resolver.swift */; };
+		A27BB818DB384FE4A607C6E3946EFC55 /* FetchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF30279E7CF6DE10F209D0FD4C91E8D /* FetchResult.swift */; };
+		A4D25312A0CC165FB3DE4A4C7B499A25 /* Container.Arguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED680E1B874778942A692FC3C8E7489 /* Container.Arguments.swift */; };
+		A749C4D3FF2A4AF126F66C600252FE1A /* MailPart+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3B1F1A76EABB6542B1CB3E7FA639D2 /* MailPart+Parsing.swift */; };
+		AA3793CECFAC316243689B4CE15A6A44 /* SpinLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B7D47EB3E4F2C806567F057114E93D /* SpinLock.swift */; };
+		ADC6E6CDB67BF72551533BC4E4555213 /* IMAPSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E02F024B45BA812AF29312B4525756 /* IMAPSession.swift */; };
+		ADC9C062ED7E21B8581EBD3A277D5037 /* FunctionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1A6349EEDACC44EA37652EEFA940E3 /* FunctionType.swift */; };
+		AFE71F968B696E07B462831033ABC80C /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCAC716A2B58393FEA43344EDF9F01C /* Util.swift */; };
+		B03463759CFDAE9D9412A87358AB2A83 /* Container.TypeForwarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ABEC0CCD1193ED99A0DA71C4EC952B /* Container.TypeForwarding.swift */; };
 		B3B192B04679FA721960120E25B914B8 /* Pods-EmailFinderTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 43F9625A2EE90C19D80A3B121D0F4CB3 /* Pods-EmailFinderTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B54025CC480209E6D35980769AA72492 /* Postal-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8105B140BED009C353596CB1B27BFDA /* Postal-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B9C6D5E249D75DF7F416E8E079FABD50 /* MailPart+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0C00E4D10FA357E1BF21C3360ECDF3 /* MailPart+Parsing.swift */; };
-		B9D1185E726DB659773E15F5D3104543 /* Result-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 86745D2755BB356CC1AC52CD9A88DBFE /* Result-dummy.m */; };
-		BB67C0DA586DC3E335A5DA28C98AD107 /* Extension+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E48B7407C9B0593EF79C16E47626F3 /* Extension+Parsing.swift */; };
-		BC716B01BBA66B880C080A3534E862F1 /* MessageFlags+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF87648C150E4740950CE6B7F8BA2CA5 /* MessageFlags+Parsing.swift */; };
-		BDBE62C21D698B57BD02DAE1A4E939E1 /* IMAPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB96B891301338C7C2509BF46054D7 /* IMAPError.swift */; };
-		CB437A784829FB000EBEA86722012147 /* MimeType+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BB351B416AEB34A8715D1C554CCE5 /* MimeType+Parsing.swift */; };
-		CEF94186E0614FC9BD5D40DB43EB41F6 /* Logger+IMAP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B7D92D8E83D5DD6860F3B03EF1CC16 /* Logger+IMAP.swift */; };
-		D3BB737C185A0669ABCBF8779656DA63 /* ContentDisposition+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8215045EC26B1926A446F4BB40E7B84E /* ContentDisposition+Parsing.swift */; };
-		DE80D2CF60128228C1CFEF0D23DD1AF9 /* Message+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84681F2023F5703CA0963191C65F90BC /* Message+Parsing.swift */; };
-		E5EC6A01CF392C2BF106399418E09873 /* IMAPCapability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E2DA738C4E3493FA728420F2DDB7DA /* IMAPCapability.swift */; };
-		ED1C6E350FDA83ED4E21CD16C116AF34 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE3043065934A522C4C4351B79D3A21 /* Configuration.swift */; };
-		F0D9CFC7DC8C007441FEF1B344308F9B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F8A05BE02A5E2BDB00394EB19A06583 /* Cocoa.framework */; };
-		F56D8FEA3826A3A35006266E6374284C /* MailData+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16415530D5A31099BD3A6EB99404453D /* MailData+Decode.swift */; };
-		F678A9A2C325E79DA0AC208D03CD49BC /* CertificateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F009A66D49BB827F40F3BA196F740D3A /* CertificateUtils.swift */; };
-		F682AAE42B8701CE15227ABC957FC8D6 /* Postal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525E5A2DAA2F98960F382C85EBCC94BE /* Postal.swift */; };
-		F963A641D7B82B6294C2B62024EC9BFB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F8A05BE02A5E2BDB00394EB19A06583 /* Cocoa.framework */; };
-		FB4E03FD67FD387D3035F097E32A01A8 /* IMFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0C688DDF30C864957EBAA873244ECD /* IMFError.swift */; };
+		B8761276C959268E69BE09250B9524BE /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294DB1E9AE9056437BDC146701E33F63 /* Container.swift */; };
+		B924161D2F87B859ECFA9568E0467A69 /* IMAPSession+Folder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142787780DC956387AF57C5C3EF957DA /* IMAPSession+Folder.swift */; };
+		BFE213244C740D20A8299107F05430F8 /* Behavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = C153C9AD89F455848445FDF5EFEFA784 /* Behavior.swift */; };
+		C18F8521DF033317A95718D2699FCD30 /* IMAPCapability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BDC6769E94B169096ACBA2D8187F38 /* IMAPCapability.swift */; };
+		CA3F0FC49C8C96F986BC4B7E0EDEA044 /* Swinject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D36BCCB415F28FDE7E6BC8CA5A22AF /* Swinject-dummy.m */; };
+		CCA64AF64DA90EF4D29337BE7371B284 /* IMFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933C75586D77C81CE3E2045834D00B1 /* IMFError.swift */; };
+		DBDBE4FD34ED818DFF510BA4874FB112 /* Address+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DDF0151E050480B83782D88224D1B3 /* Address+Parsing.swift */; };
+		E186B7C4EE38640DE8A407D3ADA3E743 /* Container.Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CB1C43E8A5648790B34146A7955E9B /* Container.Logging.swift */; };
+		E331A92EA4DB6068725824A69ADFA323 /* ContentDisposition+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F8EF97EDDD94B4BE0B987C1888F91D /* ContentDisposition+Parsing.swift */; };
+		EBF9BBEECF9183A5D715535619D1AE0F /* IMAPSession+List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB312A058B856207968A659790CE9E6 /* IMAPSession+List.swift */; };
+		ED2A123CB0812C9379F3DFA33007FD54 /* IMAPSession+Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC530B61401999BADD3213F0F3D20C /* IMAPSession+Move.swift */; };
+		F43ADE16043732E2543532E1AA752925 /* MimeType+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00E92355230FC7C48115483562C93B9 /* MimeType+Parsing.swift */; };
+		FB0DCDCDEAE8383DE1D9EA74E68F2325 /* Postal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAFABDB4070A1F35E799D3B44D9FD1C /* Postal.swift */; };
+		FBB255A81067F582B9A09A45C57FBED1 /* IMAPNamespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD23638B79D8E73DD220CFA771DB528 /* IMAPNamespace.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		437556BBEE953B8D2C539567AA7F3415 /* PBXContainerItemProxy */ = {
+		294F088F94A2D58781D46948F7845577 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E163AC315AD24CFBD60C178D602BFC83;
-			remoteInfo = Result;
+			remoteGlobalIDString = 014CE582943DE44B473C7E70A5897BE2;
+			remoteInfo = Postal;
 		};
-		61005C7EF2D45EDB6633D97CDA824FC3 /* PBXContainerItemProxy */ = {
+		745AEE6C2A014EA38883B0712593FEBF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E163AC315AD24CFBD60C178D602BFC83;
-			remoteInfo = Result;
+			remoteGlobalIDString = 46065AF968A5A92D450BB21F7F24367D;
+			remoteInfo = Swinject;
 		};
 		8CC0558FA50D07423583E54E7B7F1851 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -80,107 +101,112 @@
 			remoteGlobalIDString = F35AA12F9D1A9A2C1C47695761724D85;
 			remoteInfo = "Pods-EmailFinder";
 		};
-		C8C9ABC43A348BFC03EF91586FFA5AD0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 014CE582943DE44B473C7E70A5897BE2;
-			remoteInfo = Postal;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00E335D0568E9DD980BF43ED2623B807 /* PostalError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PostalError.swift; path = Postal/PostalError.swift; sourceTree = "<group>"; };
 		02BF2F97C05C4A66C263E59F9AB71342 /* Pods-EmailFinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EmailFinderTests.release.xcconfig"; sourceTree = "<group>"; };
-		0461B3F80FC05957690727254D64DB36 /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Result.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		05BDC8DFBA8E7FC11E2535CB55791B8E /* Libetpan+Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Libetpan+Util.swift"; path = "Postal/Libetpan+Util.swift"; sourceTree = "<group>"; };
+		03BDC6769E94B169096ACBA2D8187F38 /* IMAPCapability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMAPCapability.swift; path = Postal/IMAPCapability.swift; sourceTree = "<group>"; };
 		070B2281B9146FE5CCF078FDBC088AB7 /* Pods-EmailFinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EmailFinderTests.debug.xcconfig"; sourceTree = "<group>"; };
-		10D2816366E9A757F22C50F042E4BA40 /* MessageHeader+Parsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MessageHeader+Parsing.swift"; path = "Postal/MessageHeader+Parsing.swift"; sourceTree = "<group>"; };
+		0AACAB4EE787E23B8A6CFF4B0DC1E453 /* Resolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resolver.swift; path = Sources/Resolver.swift; sourceTree = "<group>"; };
+		142787780DC956387AF57C5C3EF957DA /* IMAPSession+Folder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IMAPSession+Folder.swift"; path = "Postal/IMAPSession+Folder.swift"; sourceTree = "<group>"; };
 		143146A581A7A9B7F52399F6C39BDC4F /* Pods-EmailFinder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EmailFinder.modulemap"; sourceTree = "<group>"; };
-		15E48B7407C9B0593EF79C16E47626F3 /* Extension+Parsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Extension+Parsing.swift"; path = "Postal/Extension+Parsing.swift"; sourceTree = "<group>"; };
-		16415530D5A31099BD3A6EB99404453D /* MailData+Decode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MailData+Decode.swift"; path = "Postal/MailData+Decode.swift"; sourceTree = "<group>"; };
-		1B166BF62DB4AADCF4C5C0A47BCC188D /* IMAPSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMAPSession.swift; path = Postal/IMAPSession.swift; sourceTree = "<group>"; };
-		1D71D4DF6AF6ADCEE8F8206A79D39720 /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		149A4D8DEF10C85936A14B4FF2ADC013 /* Postal-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Postal-dummy.m"; sourceTree = "<group>"; };
+		17D36BCCB415F28FDE7E6BC8CA5A22AF /* Swinject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Swinject-dummy.m"; sourceTree = "<group>"; };
+		182BF3DD3CF34D3DA991AF0838C0AFEF /* Assembler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Assembler.swift; path = Sources/Assembler.swift; sourceTree = "<group>"; };
+		1970E765269A723F552B46E5BB85BE2E /* MessageHeader+Parsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MessageHeader+Parsing.swift"; path = "Postal/MessageHeader+Parsing.swift"; sourceTree = "<group>"; };
 		1F2A2132F0A8DCF4A372002265DEE38D /* Pods-EmailFinder-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EmailFinder-acknowledgements.plist"; sourceTree = "<group>"; };
-		2065CC55D14A491A906BE22C52176133 /* Postal-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Postal-Info.plist"; sourceTree = "<group>"; };
-		2290EBAEDEA130882A00DE8C15FF4ACA /* PostalError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PostalError.swift; path = Postal/PostalError.swift; sourceTree = "<group>"; };
-		2DC5FA525D06774F8F52D07B41C8866A /* Result.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Result.debug.xcconfig; sourceTree = "<group>"; };
-		2E0C00E4D10FA357E1BF21C3360ECDF3 /* MailPart+Parsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MailPart+Parsing.swift"; path = "Postal/MailPart+Parsing.swift"; sourceTree = "<group>"; };
+		22E5353B69A05079811EB2E3818D29C0 /* InstanceStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InstanceStorage.swift; path = Sources/InstanceStorage.swift; sourceTree = "<group>"; };
+		25541AF3F29ED67DD29502EEFA89C2DD /* MailData+Decode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MailData+Decode.swift"; path = "Postal/MailData+Decode.swift"; sourceTree = "<group>"; };
+		294DB1E9AE9056437BDC146701E33F63 /* Container.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Container.swift; path = Sources/Container.swift; sourceTree = "<group>"; };
+		3037A567EC2B258E4B7F6276118AE85A /* Logger+IMAP.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Logger+IMAP.swift"; path = "Postal/Logger+IMAP.swift"; sourceTree = "<group>"; };
+		30EC530B61401999BADD3213F0F3D20C /* IMAPSession+Move.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IMAPSession+Move.swift"; path = "Postal/IMAPSession+Move.swift"; sourceTree = "<group>"; };
 		348C3979743FFEC11C605D04001AAF32 /* Pods-EmailFinderTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EmailFinderTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		35930197B10C916BABBE233D5B7E7167 /* ResultProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResultProtocol.swift; path = Result/ResultProtocol.swift; sourceTree = "<group>"; };
-		388652A437757ECB8A68662F38E8347B /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Result/Result.swift; sourceTree = "<group>"; };
-		3EE3043065934A522C4C4351B79D3A21 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Postal/Configuration.swift; sourceTree = "<group>"; };
-		421F7A5A68FE703D9ABAC3AD7BF8A17A /* Result.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Result.modulemap; sourceTree = "<group>"; };
+		3FCAC716A2B58393FEA43344EDF9F01C /* Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Util.swift; path = Postal/Util.swift; sourceTree = "<group>"; };
 		43F9625A2EE90C19D80A3B121D0F4CB3 /* Pods-EmailFinderTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EmailFinderTests-umbrella.h"; sourceTree = "<group>"; };
-		44E97332EF9D89A47D5675838BB90B41 /* IMAPFolder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMAPFolder.swift; path = Postal/IMAPFolder.swift; sourceTree = "<group>"; };
-		4B0509872721E5D5ED3B814EF5D95210 /* IMAPIdentity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMAPIdentity.swift; path = Postal/IMAPIdentity.swift; sourceTree = "<group>"; };
-		4EBBCACC488B849904562B54FD6BD138 /* Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Util.swift; path = Postal/Util.swift; sourceTree = "<group>"; };
-		525E5A2DAA2F98960F382C85EBCC94BE /* Postal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Postal.swift; path = Postal/Postal.swift; sourceTree = "<group>"; };
-		52DAD376704EC0AB44E17E1EEF35FFD8 /* Postal-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Postal-dummy.m"; sourceTree = "<group>"; };
+		46C2D4CC71850B2382E2322A188A5917 /* MailPart+Enumeration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MailPart+Enumeration.swift"; path = "Postal/MailPart+Enumeration.swift"; sourceTree = "<group>"; };
+		48FA042AF584BF2FC2A3C3CB47FD8AAD /* GraphIdentifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphIdentifier.swift; path = Sources/GraphIdentifier.swift; sourceTree = "<group>"; };
+		49F8EF97EDDD94B4BE0B987C1888F91D /* ContentDisposition+Parsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ContentDisposition+Parsing.swift"; path = "Postal/ContentDisposition+Parsing.swift"; sourceTree = "<group>"; };
+		4CD5B838D7820BC6C6AAD31106E8B16A /* Swinject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Swinject.h; path = Sources/Swinject.h; sourceTree = "<group>"; };
+		4E3B1F1A76EABB6542B1CB3E7FA639D2 /* MailPart+Parsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MailPart+Parsing.swift"; path = "Postal/MailPart+Parsing.swift"; sourceTree = "<group>"; };
 		54511282CFD097BD31B64A55247746E0 /* Pods-EmailFinder-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EmailFinder-Info.plist"; sourceTree = "<group>"; };
-		559807A084889D321EF268D13255EA72 /* IMAPSession+Search.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IMAPSession+Search.swift"; path = "Postal/IMAPSession+Search.swift"; sourceTree = "<group>"; };
-		56E2DA738C4E3493FA728420F2DDB7DA /* IMAPCapability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMAPCapability.swift; path = Postal/IMAPCapability.swift; sourceTree = "<group>"; };
-		5B16493D8691E421495511607129C9E5 /* Result.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Result.release.xcconfig; sourceTree = "<group>"; };
-		5E0C688DDF30C864957EBAA873244ECD /* IMFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMFError.swift; path = Postal/IMFError.swift; sourceTree = "<group>"; };
-		6130226DA9E9FD15248EF5435373E3E4 /* ContentEncoding+Parsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ContentEncoding+Parsing.swift"; path = "Postal/ContentEncoding+Parsing.swift"; sourceTree = "<group>"; };
-		6334B9E447AB322B73ECBF6804BF8528 /* Address+Parsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Address+Parsing.swift"; path = "Postal/Address+Parsing.swift"; sourceTree = "<group>"; };
+		5C6FC00ACFFBC54E452271F5040F2672 /* Swinject-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Swinject-umbrella.h"; sourceTree = "<group>"; };
+		5F86BF282EF21AD6B9A345E5662B8423 /* MimeFields+Parsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MimeFields+Parsing.swift"; path = "Postal/MimeFields+Parsing.swift"; sourceTree = "<group>"; };
+		605C3A9FA797670DAC96E1069A3B81F9 /* ObjectScope.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjectScope.swift; path = Sources/ObjectScope.swift; sourceTree = "<group>"; };
 		6472D1A591E5AEB3EB23A6BEC092A250 /* Pods-EmailFinder-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EmailFinder-frameworks.sh"; sourceTree = "<group>"; };
-		64EEE320E6D582CB86919F143A6123C4 /* MessageAttribute+Parsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MessageAttribute+Parsing.swift"; path = "Postal/MessageAttribute+Parsing.swift"; sourceTree = "<group>"; };
+		64B5C9455567B66EA580B3E3868D0AF5 /* Postal-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Postal-Info.plist"; sourceTree = "<group>"; };
 		6A4701A2D8D68404A37B897CCF29FD3E /* Postal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Postal.framework; path = Postal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E7E1EF61A9185FEA521789409A0CDBB /* Postal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Postal.release.xcconfig; sourceTree = "<group>"; };
+		6DD146C5860F72534D44ABFC6EE268D7 /* IMAPSession+Fetch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IMAPSession+Fetch.swift"; path = "Postal/IMAPSession+Fetch.swift"; sourceTree = "<group>"; };
+		6E3E8FCE0AB9C0B3579D41B963D7BF4D /* ObjectScope.Standard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjectScope.Standard.swift; path = Sources/ObjectScope.Standard.swift; sourceTree = "<group>"; };
+		6ED0250FEEAC1B1D42287348AAF8D704 /* _Resolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = _Resolver.swift; path = Sources/_Resolver.swift; sourceTree = "<group>"; };
 		6FF5919E3A0D3E8BA9DB25D71315FFC4 /* Pods_EmailFinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EmailFinderTests.framework; path = "Pods-EmailFinderTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		742AA2EA6888B3A8B0AC28D698BB72FC /* Postal-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Postal-prefix.pch"; sourceTree = "<group>"; };
-		75653F2B665A652A7F509F37DE0C3E3A /* MimeFields+Parsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MimeFields+Parsing.swift"; path = "Postal/MimeFields+Parsing.swift"; sourceTree = "<group>"; };
-		7743FC292D3B00B1E3263C06D7527DE4 /* IMAPSession+Folder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IMAPSession+Folder.swift"; path = "Postal/IMAPSession+Folder.swift"; sourceTree = "<group>"; };
+		7608FFB8931E45E454A63144AAFE1375 /* Postal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Postal.release.xcconfig; sourceTree = "<group>"; };
+		7725E9EF7EDF123EB8AE6CA07FAE448B /* ServiceEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceEntry.swift; path = Sources/ServiceEntry.swift; sourceTree = "<group>"; };
+		79DDF0151E050480B83782D88224D1B3 /* Address+Parsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Address+Parsing.swift"; path = "Postal/Address+Parsing.swift"; sourceTree = "<group>"; };
+		7C20CB2EF629466D3D345A6FECFBEFF3 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Postal/Configuration.swift; sourceTree = "<group>"; };
 		7C414F32F750EBCBFD30D0CDB1618E9A /* Pods-EmailFinder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EmailFinder-dummy.m"; sourceTree = "<group>"; };
-		7F8A05BE02A5E2BDB00394EB19A06583 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		8215045EC26B1926A446F4BB40E7B84E /* ContentDisposition+Parsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ContentDisposition+Parsing.swift"; path = "Postal/ContentDisposition+Parsing.swift"; sourceTree = "<group>"; };
-		84681F2023F5703CA0963191C65F90BC /* Message+Parsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Message+Parsing.swift"; path = "Postal/Message+Parsing.swift"; sourceTree = "<group>"; };
+		82745A84873A894D629270A8896022B4 /* Postal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Postal.debug.xcconfig; sourceTree = "<group>"; };
+		83C1DF622A577621B81156DA2944213B /* DebugHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DebugHelper.swift; path = Sources/DebugHelper.swift; sourceTree = "<group>"; };
 		84F2CA50F8487231706314AAC14D5C35 /* Pods-EmailFinderTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EmailFinderTests-Info.plist"; sourceTree = "<group>"; };
-		85B7D92D8E83D5DD6860F3B03EF1CC16 /* Logger+IMAP.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Logger+IMAP.swift"; path = "Postal/Logger+IMAP.swift"; sourceTree = "<group>"; };
 		864A7ADF76ABC22FFC3194C9F2612717 /* Pods-EmailFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EmailFinder.debug.xcconfig"; sourceTree = "<group>"; };
-		86745D2755BB356CC1AC52CD9A88DBFE /* Result-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Result-dummy.m"; sourceTree = "<group>"; };
-		9512C7904C15857682722727CCD39161 /* Postal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Postal.debug.xcconfig; sourceTree = "<group>"; };
-		972BA2545B9DE6373FB490DB5715786F /* Result-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Result-prefix.pch"; sourceTree = "<group>"; };
+		87DA9A03AD0BF0BDCA050816CA4FCF3D /* Postal.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Postal.modulemap; sourceTree = "<group>"; };
+		896D4DC2F89C10DD00372A4D26F5DD07 /* MessageAttribute+Parsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MessageAttribute+Parsing.swift"; path = "Postal/MessageAttribute+Parsing.swift"; sourceTree = "<group>"; };
+		89702004613838FB60D190BA3BC63D12 /* Swinject.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Swinject.modulemap; sourceTree = "<group>"; };
+		8A91498DAEE2D26C1D8316437E3C6D1E /* MessageFlags+Parsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MessageFlags+Parsing.swift"; path = "Postal/MessageFlags+Parsing.swift"; sourceTree = "<group>"; };
+		8ACA110EF3B35B3FCC08297B3799D9AD /* Swinject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Swinject.framework; path = Swinject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D87F20782F7EBBECBB51B43A2942A2A /* Libetpan+Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Libetpan+Util.swift"; path = "Postal/Libetpan+Util.swift"; sourceTree = "<group>"; };
+		8DD23638B79D8E73DD220CFA771DB528 /* IMAPNamespace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMAPNamespace.swift; path = Postal/IMAPNamespace.swift; sourceTree = "<group>"; };
+		8EB312A058B856207968A659790CE9E6 /* IMAPSession+List.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IMAPSession+List.swift"; path = "Postal/IMAPSession+List.swift"; sourceTree = "<group>"; };
+		8FF522151BCFBBC150A1D0B38C8AB299 /* Swinject-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Swinject-prefix.pch"; sourceTree = "<group>"; };
+		906364587BF45CA1DB466E9A570F2981 /* Message+Parsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Message+Parsing.swift"; path = "Postal/Message+Parsing.swift"; sourceTree = "<group>"; };
+		93297D75B83E20EEA5F4924C29AF3F1D /* ServiceKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceKey.swift; path = Sources/ServiceKey.swift; sourceTree = "<group>"; };
+		96BFD1083D786A2CDDEAC6B0746B27F7 /* ServiceEntry.TypeForwarding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceEntry.TypeForwarding.swift; path = Sources/ServiceEntry.TypeForwarding.swift; sourceTree = "<group>"; };
 		9934C118BDE5E0A2C1D617BB73152953 /* Pods-EmailFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EmailFinder.release.xcconfig"; sourceTree = "<group>"; };
-		9D34E42B60A51A6F2E2AFEF3F0A09613 /* IMAPSession+Fetch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IMAPSession+Fetch.swift"; path = "Postal/IMAPSession+Fetch.swift"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9DC52B55770A6BBA57222351F803D516 /* IMAPNamespace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMAPNamespace.swift; path = Postal/IMAPNamespace.swift; sourceTree = "<group>"; };
-		9F799EBD7CFF2DE2C85A668E3180DFE7 /* IMAPSession+Move.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IMAPSession+Move.swift"; path = "Postal/IMAPSession+Move.swift"; sourceTree = "<group>"; };
+		9FBCEEFBE6483A8DAB5D50C290C545FE /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Postal/Logger.swift; sourceTree = "<group>"; };
+		A5B7D47EB3E4F2C806567F057114E93D /* SpinLock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpinLock.swift; path = Sources/SpinLock.swift; sourceTree = "<group>"; };
+		A6CCE2FA0F37F23111D20F6227147559 /* IMAPError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMAPError.swift; path = Postal/IMAPError.swift; sourceTree = "<group>"; };
 		A7BD0C16F2EAAD351ADBF66E0BDD5A1C /* Pods-EmailFinder-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EmailFinder-acknowledgements.markdown"; sourceTree = "<group>"; };
-		AF19236D195569F19988CF1DD5D84935 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Postal/Logger.swift; sourceTree = "<group>"; };
-		AF87648C150E4740950CE6B7F8BA2CA5 /* MessageFlags+Parsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MessageFlags+Parsing.swift"; path = "Postal/MessageFlags+Parsing.swift"; sourceTree = "<group>"; };
-		B07BB351B416AEB34A8715D1C554CCE5 /* MimeType+Parsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MimeType+Parsing.swift"; path = "Postal/MimeType+Parsing.swift"; sourceTree = "<group>"; };
+		A933C75586D77C81CE3E2045834D00B1 /* IMFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMFError.swift; path = Postal/IMFError.swift; sourceTree = "<group>"; };
+		A9A2E37F42BA852991EBF651E27B247B /* Swinject-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Swinject-Info.plist"; sourceTree = "<group>"; };
+		AC1A6349EEDACC44EA37652EEFA940E3 /* FunctionType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FunctionType.swift; path = Sources/FunctionType.swift; sourceTree = "<group>"; };
 		B07C581A42255FE451C88749414312A2 /* Pods_EmailFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EmailFinder.framework; path = "Pods-EmailFinder.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A114E910B7B247C5F3E29DCE432FAA /* Pods-EmailFinderTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EmailFinderTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B8105B140BED009C353596CB1B27BFDA /* Postal-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Postal-umbrella.h"; sourceTree = "<group>"; };
-		C7AF5E9123A7128E826CB68A010FD03E /* IMAPSession+List.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IMAPSession+List.swift"; path = "Postal/IMAPSession+List.swift"; sourceTree = "<group>"; };
+		B1ABEC0CCD1193ED99A0DA71C4EC952B /* Container.TypeForwarding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Container.TypeForwarding.swift; path = Sources/Container.TypeForwarding.swift; sourceTree = "<group>"; };
+		B4CB1C43E8A5648790B34146A7955E9B /* Container.Logging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Container.Logging.swift; path = Sources/Container.Logging.swift; sourceTree = "<group>"; };
+		B67568B943B9C8CCC980AE86463FA70C /* IMAPSession+Search.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IMAPSession+Search.swift"; path = "Postal/IMAPSession+Search.swift"; sourceTree = "<group>"; };
+		BB9D57BE38543306739C4CCC247EABDF /* InstanceWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InstanceWrapper.swift; path = Sources/InstanceWrapper.swift; sourceTree = "<group>"; };
+		BC86DE56C676F16FD364D4257DB621E1 /* CertificateUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CertificateUtils.swift; path = Postal/CertificateUtils.swift; sourceTree = "<group>"; };
+		BF0098C1BA61D24A06F4124E736DF9BA /* Swinject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Swinject.debug.xcconfig; sourceTree = "<group>"; };
+		C153C9AD89F455848445FDF5EFEFA784 /* Behavior.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Behavior.swift; path = Sources/Behavior.swift; sourceTree = "<group>"; };
+		CA6F1157D18511E7C2F0B60B3C5E741A /* SynchronizedResolver.Arguments.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SynchronizedResolver.Arguments.swift; path = Sources/SynchronizedResolver.Arguments.swift; sourceTree = "<group>"; };
 		CF133F4DE39D300CF1AF85ED6ADFB7E9 /* Pods-EmailFinderTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EmailFinderTests-dummy.m"; sourceTree = "<group>"; };
+		D651E01AA14243B27F869B93CBA70558 /* Swinject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Swinject.release.xcconfig; sourceTree = "<group>"; };
+		D8E02F024B45BA812AF29312B4525756 /* IMAPSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMAPSession.swift; path = Postal/IMAPSession.swift; sourceTree = "<group>"; };
+		DAB322284B10CCD579C0306EC1AB55C3 /* ContentEncoding+Parsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ContentEncoding+Parsing.swift"; path = "Postal/ContentEncoding+Parsing.swift"; sourceTree = "<group>"; };
+		DB4ACF19449227E90295CA51EC1D5091 /* IMAPIdentity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMAPIdentity.swift; path = Postal/IMAPIdentity.swift; sourceTree = "<group>"; };
 		DB62532DA23DD8E7A54408EA1EA021E2 /* Pods-EmailFinderTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EmailFinderTests.modulemap"; sourceTree = "<group>"; };
 		DB94DC7A6525D4D846A1D9155F03E62C /* Pods-EmailFinder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EmailFinder-umbrella.h"; sourceTree = "<group>"; };
-		E5D00D6F54927798B3F7F2D8CF45107C /* MailPart+Enumeration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MailPart+Enumeration.swift"; path = "Postal/MailPart+Enumeration.swift"; sourceTree = "<group>"; };
-		E83FA7057A6C9D78EED0CFA9CECF57AB /* Result-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Result-Info.plist"; sourceTree = "<group>"; };
-		F009A66D49BB827F40F3BA196F740D3A /* CertificateUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CertificateUtils.swift; path = Postal/CertificateUtils.swift; sourceTree = "<group>"; };
-		FA04E7FB313C0AD2B18E06429FF9BDBA /* Result-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Result-umbrella.h"; sourceTree = "<group>"; };
-		FAA786F8FEEE52B0867AE31D4DC28546 /* Postal.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Postal.modulemap; sourceTree = "<group>"; };
-		FFAB96B891301338C7C2509BF46054D7 /* IMAPError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMAPError.swift; path = Postal/IMAPError.swift; sourceTree = "<group>"; };
-		FFCFEB647C531A32A16C679307E6CEBD /* FetchResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FetchResult.swift; path = Postal/FetchResult.swift; sourceTree = "<group>"; };
+		E24225C6A5328A860EFEF095CBC18392 /* IMAPFolder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMAPFolder.swift; path = Postal/IMAPFolder.swift; sourceTree = "<group>"; };
+		E84F272A3E2CA286118C80B0EB9EAB37 /* Postal-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Postal-umbrella.h"; sourceTree = "<group>"; };
+		EFC380717A7035213025B81DEE255536 /* Assembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Assembly.swift; path = Sources/Assembly.swift; sourceTree = "<group>"; };
+		F00E92355230FC7C48115483562C93B9 /* MimeType+Parsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MimeType+Parsing.swift"; path = "Postal/MimeType+Parsing.swift"; sourceTree = "<group>"; };
+		F25AB861594F13FEAC965625C1CF582A /* UnavailableItems.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnavailableItems.swift; path = Sources/UnavailableItems.swift; sourceTree = "<group>"; };
+		F37507664C12FE7E7DC7DE981C62058B /* Postal-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Postal-prefix.pch"; sourceTree = "<group>"; };
+		F3C6EBF5142133A653339F9421617804 /* Extension+Parsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Extension+Parsing.swift"; path = "Postal/Extension+Parsing.swift"; sourceTree = "<group>"; };
+		F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		FB345E607C57CE028CD4DEDB5B7EDE62 /* SynchronizedResolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SynchronizedResolver.swift; path = Sources/SynchronizedResolver.swift; sourceTree = "<group>"; };
+		FBF30279E7CF6DE10F209D0FD4C91E8D /* FetchResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FetchResult.swift; path = Postal/FetchResult.swift; sourceTree = "<group>"; };
+		FED680E1B874778942A692FC3C8E7489 /* Container.Arguments.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Container.Arguments.swift; path = Sources/Container.Arguments.swift; sourceTree = "<group>"; };
+		FFAFABDB4070A1F35E799D3B44D9FD1C /* Postal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Postal.swift; path = Postal/Postal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0D812040BD1197C02EFA6FCD88A7753D /* Frameworks */ = {
+		4A6BB468DFD4DC95CE7DAADF366D0DEF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F963A641D7B82B6294C2B62024EC9BFB /* Cocoa.framework in Frameworks */,
-				3D8B535312C1A7EC3D80930FD728D9C8 /* Result.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5973E1A3EB3EDC9AD6BB3F2976B4DD8E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7DB373D17D2B719959CFF52C0AFE1681 /* Cocoa.framework in Frameworks */,
+				620F692A24865770EA9AE6BDAEA40D0D /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,23 +218,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB86CC1767E578AFC40853D5C4B3560F /* Frameworks */ = {
+		921F4C405F0DC27F2AE44FE706FC80E8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0D9CFC7DC8C007441FEF1B344308F9B /* Cocoa.framework in Frameworks */,
+				6139236F1E6F367EA321E01B703E183E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A98B87DFAF9B412845EAA73B121BEB92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B5522003526B92A73CF764CDDE64758 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A05EF1B1A1D2853FE8684904B04A0A2 /* OS X */ = {
+		31DEA213B61CEADC7378A152BBE82A1B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7F8A05BE02A5E2BDB00394EB19A06583 /* Cocoa.framework */,
+				B07C581A42255FE451C88749414312A2 /* Pods_EmailFinder.framework */,
+				6FF5919E3A0D3E8BA9DB25D71315FFC4 /* Pods_EmailFinderTests.framework */,
+				6A4701A2D8D68404A37B897CCF29FD3E /* Postal.framework */,
+				8ACA110EF3B35B3FCC08297B3799D9AD /* Swinject.framework */,
 			);
-			name = "OS X";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		3B48F8EF4FE80A8380F0AFFFC1C7C421 /* Targets Support Files */ = {
@@ -220,90 +257,19 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		3D8B4D2648299BBABED1546DB11E287F /* Core */ = {
+		4687C71A63D3C56680C17798470D71BB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6334B9E447AB322B73ECBF6804BF8528 /* Address+Parsing.swift */,
-				F009A66D49BB827F40F3BA196F740D3A /* CertificateUtils.swift */,
-				3EE3043065934A522C4C4351B79D3A21 /* Configuration.swift */,
-				8215045EC26B1926A446F4BB40E7B84E /* ContentDisposition+Parsing.swift */,
-				6130226DA9E9FD15248EF5435373E3E4 /* ContentEncoding+Parsing.swift */,
-				15E48B7407C9B0593EF79C16E47626F3 /* Extension+Parsing.swift */,
-				FFCFEB647C531A32A16C679307E6CEBD /* FetchResult.swift */,
-				56E2DA738C4E3493FA728420F2DDB7DA /* IMAPCapability.swift */,
-				FFAB96B891301338C7C2509BF46054D7 /* IMAPError.swift */,
-				44E97332EF9D89A47D5675838BB90B41 /* IMAPFolder.swift */,
-				4B0509872721E5D5ED3B814EF5D95210 /* IMAPIdentity.swift */,
-				9DC52B55770A6BBA57222351F803D516 /* IMAPNamespace.swift */,
-				1B166BF62DB4AADCF4C5C0A47BCC188D /* IMAPSession.swift */,
-				9D34E42B60A51A6F2E2AFEF3F0A09613 /* IMAPSession+Fetch.swift */,
-				7743FC292D3B00B1E3263C06D7527DE4 /* IMAPSession+Folder.swift */,
-				C7AF5E9123A7128E826CB68A010FD03E /* IMAPSession+List.swift */,
-				9F799EBD7CFF2DE2C85A668E3180DFE7 /* IMAPSession+Move.swift */,
-				559807A084889D321EF268D13255EA72 /* IMAPSession+Search.swift */,
-				5E0C688DDF30C864957EBAA873244ECD /* IMFError.swift */,
-				05BDC8DFBA8E7FC11E2535CB55791B8E /* Libetpan+Util.swift */,
-				AF19236D195569F19988CF1DD5D84935 /* Logger.swift */,
-				85B7D92D8E83D5DD6860F3B03EF1CC16 /* Logger+IMAP.swift */,
-				16415530D5A31099BD3A6EB99404453D /* MailData+Decode.swift */,
-				E5D00D6F54927798B3F7F2D8CF45107C /* MailPart+Enumeration.swift */,
-				2E0C00E4D10FA357E1BF21C3360ECDF3 /* MailPart+Parsing.swift */,
-				84681F2023F5703CA0963191C65F90BC /* Message+Parsing.swift */,
-				64EEE320E6D582CB86919F143A6123C4 /* MessageAttribute+Parsing.swift */,
-				AF87648C150E4740950CE6B7F8BA2CA5 /* MessageFlags+Parsing.swift */,
-				10D2816366E9A757F22C50F042E4BA40 /* MessageHeader+Parsing.swift */,
-				75653F2B665A652A7F509F37DE0C3E3A /* MimeFields+Parsing.swift */,
-				B07BB351B416AEB34A8715D1C554CCE5 /* MimeType+Parsing.swift */,
-				525E5A2DAA2F98960F382C85EBCC94BE /* Postal.swift */,
-				2290EBAEDEA130882A00DE8C15FF4ACA /* PostalError.swift */,
-				4EBBCACC488B849904562B54FD6BD138 /* Util.swift */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		4F5115A4096FFA9F1BFBC843BBC0C8D3 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				421F7A5A68FE703D9ABAC3AD7BF8A17A /* Result.modulemap */,
-				86745D2755BB356CC1AC52CD9A88DBFE /* Result-dummy.m */,
-				E83FA7057A6C9D78EED0CFA9CECF57AB /* Result-Info.plist */,
-				972BA2545B9DE6373FB490DB5715786F /* Result-prefix.pch */,
-				FA04E7FB313C0AD2B18E06429FF9BDBA /* Result-umbrella.h */,
-				2DC5FA525D06774F8F52D07B41C8866A /* Result.debug.xcconfig */,
-				5B16493D8691E421495511607129C9E5 /* Result.release.xcconfig */,
+				87DA9A03AD0BF0BDCA050816CA4FCF3D /* Postal.modulemap */,
+				149A4D8DEF10C85936A14B4FF2ADC013 /* Postal-dummy.m */,
+				64B5C9455567B66EA580B3E3868D0AF5 /* Postal-Info.plist */,
+				F37507664C12FE7E7DC7DE981C62058B /* Postal-prefix.pch */,
+				E84F272A3E2CA286118C80B0EB9EAB37 /* Postal-umbrella.h */,
+				82745A84873A894D629270A8896022B4 /* Postal.debug.xcconfig */,
+				7608FFB8931E45E454A63144AAFE1375 /* Postal.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Result";
-			sourceTree = "<group>";
-		};
-		7F96D78050C68B57B153B0103DED9528 /* Postal */ = {
-			isa = PBXGroup;
-			children = (
-				3D8B4D2648299BBABED1546DB11E287F /* Core */,
-				C3F38905AD89F22995DF2F915869A1D4 /* Support Files */,
-			);
-			name = Postal;
-			path = Postal;
-			sourceTree = "<group>";
-		};
-		8F34248C654480F659B02E46E93A9E32 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7F96D78050C68B57B153B0103DED9528 /* Postal */,
-				EBF75DA5F6B2FBA1C5BB07F90B7535E5 /* Result */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		91B4EA2F2884CD403BC0BD56A98FD6ED /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B07C581A42255FE451C88749414312A2 /* Pods_EmailFinder.framework */,
-				6FF5919E3A0D3E8BA9DB25D71315FFC4 /* Pods_EmailFinderTests.framework */,
-				6A4701A2D8D68404A37B897CCF29FD3E /* Postal.framework */,
-				0461B3F80FC05957690727254D64DB36 /* Result.framework */,
-			);
-			name = Products;
+			path = "../Target Support Files/Postal";
 			sourceTree = "<group>";
 		};
 		92900A900B6BD112DEDDBBBF7503E9AB /* Pods-EmailFinderTests */ = {
@@ -320,6 +286,15 @@
 			);
 			name = "Pods-EmailFinderTests";
 			path = "Target Support Files/Pods-EmailFinderTests";
+			sourceTree = "<group>";
+		};
+		9A325CFAA5C4266D2D2FF883CA0FF66C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DCCDC513BA3B0A6CBE3B246E8463ED4B /* Postal */,
+				F1A584D21E341BA62ED2298F80006626 /* Swinject */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		A3A43A678ED26568EF382E9986DBC5D8 /* Pods-EmailFinder */ = {
@@ -339,68 +314,132 @@
 			path = "Target Support Files/Pods-EmailFinder";
 			sourceTree = "<group>";
 		};
-		A668398AF5A5646E52DB822BFE128157 /* Frameworks */ = {
+		A6FBF08B927B5F7D7D67ADD723F052D8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1D71D4DF6AF6ADCEE8F8206A79D39720 /* Result.framework */,
-				0A05EF1B1A1D2853FE8684904B04A0A2 /* OS X */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C3F38905AD89F22995DF2F915869A1D4 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				FAA786F8FEEE52B0867AE31D4DC28546 /* Postal.modulemap */,
-				52DAD376704EC0AB44E17E1EEF35FFD8 /* Postal-dummy.m */,
-				2065CC55D14A491A906BE22C52176133 /* Postal-Info.plist */,
-				742AA2EA6888B3A8B0AC28D698BB72FC /* Postal-prefix.pch */,
-				B8105B140BED009C353596CB1B27BFDA /* Postal-umbrella.h */,
-				9512C7904C15857682722727CCD39161 /* Postal.debug.xcconfig */,
-				6E7E1EF61A9185FEA521789409A0CDBB /* Postal.release.xcconfig */,
+				89702004613838FB60D190BA3BC63D12 /* Swinject.modulemap */,
+				17D36BCCB415F28FDE7E6BC8CA5A22AF /* Swinject-dummy.m */,
+				A9A2E37F42BA852991EBF651E27B247B /* Swinject-Info.plist */,
+				8FF522151BCFBBC150A1D0B38C8AB299 /* Swinject-prefix.pch */,
+				5C6FC00ACFFBC54E452271F5040F2672 /* Swinject-umbrella.h */,
+				BF0098C1BA61D24A06F4124E736DF9BA /* Swinject.debug.xcconfig */,
+				D651E01AA14243B27F869B93CBA70558 /* Swinject.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Postal";
+			path = "../Target Support Files/Swinject";
+			sourceTree = "<group>";
+		};
+		CBD43E0947D94E318A0ED1350CFF29ED /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */,
+			);
+			name = "OS X";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				A668398AF5A5646E52DB822BFE128157 /* Frameworks */,
-				8F34248C654480F659B02E46E93A9E32 /* Pods */,
-				91B4EA2F2884CD403BC0BD56A98FD6ED /* Products */,
+				E0A1E60606E0BF6E2E10F1F01350DFE8 /* Frameworks */,
+				9A325CFAA5C4266D2D2FF883CA0FF66C /* Pods */,
+				31DEA213B61CEADC7378A152BBE82A1B /* Products */,
 				3B48F8EF4FE80A8380F0AFFFC1C7C421 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		EBF75DA5F6B2FBA1C5BB07F90B7535E5 /* Result */ = {
+		DCCDC513BA3B0A6CBE3B246E8463ED4B /* Postal */ = {
 			isa = PBXGroup;
 			children = (
-				388652A437757ECB8A68662F38E8347B /* Result.swift */,
-				35930197B10C916BABBE233D5B7E7167 /* ResultProtocol.swift */,
-				4F5115A4096FFA9F1BFBC843BBC0C8D3 /* Support Files */,
+				79DDF0151E050480B83782D88224D1B3 /* Address+Parsing.swift */,
+				BC86DE56C676F16FD364D4257DB621E1 /* CertificateUtils.swift */,
+				7C20CB2EF629466D3D345A6FECFBEFF3 /* Configuration.swift */,
+				49F8EF97EDDD94B4BE0B987C1888F91D /* ContentDisposition+Parsing.swift */,
+				DAB322284B10CCD579C0306EC1AB55C3 /* ContentEncoding+Parsing.swift */,
+				F3C6EBF5142133A653339F9421617804 /* Extension+Parsing.swift */,
+				FBF30279E7CF6DE10F209D0FD4C91E8D /* FetchResult.swift */,
+				03BDC6769E94B169096ACBA2D8187F38 /* IMAPCapability.swift */,
+				A6CCE2FA0F37F23111D20F6227147559 /* IMAPError.swift */,
+				E24225C6A5328A860EFEF095CBC18392 /* IMAPFolder.swift */,
+				DB4ACF19449227E90295CA51EC1D5091 /* IMAPIdentity.swift */,
+				8DD23638B79D8E73DD220CFA771DB528 /* IMAPNamespace.swift */,
+				D8E02F024B45BA812AF29312B4525756 /* IMAPSession.swift */,
+				6DD146C5860F72534D44ABFC6EE268D7 /* IMAPSession+Fetch.swift */,
+				142787780DC956387AF57C5C3EF957DA /* IMAPSession+Folder.swift */,
+				8EB312A058B856207968A659790CE9E6 /* IMAPSession+List.swift */,
+				30EC530B61401999BADD3213F0F3D20C /* IMAPSession+Move.swift */,
+				B67568B943B9C8CCC980AE86463FA70C /* IMAPSession+Search.swift */,
+				A933C75586D77C81CE3E2045834D00B1 /* IMFError.swift */,
+				8D87F20782F7EBBECBB51B43A2942A2A /* Libetpan+Util.swift */,
+				9FBCEEFBE6483A8DAB5D50C290C545FE /* Logger.swift */,
+				3037A567EC2B258E4B7F6276118AE85A /* Logger+IMAP.swift */,
+				25541AF3F29ED67DD29502EEFA89C2DD /* MailData+Decode.swift */,
+				46C2D4CC71850B2382E2322A188A5917 /* MailPart+Enumeration.swift */,
+				4E3B1F1A76EABB6542B1CB3E7FA639D2 /* MailPart+Parsing.swift */,
+				906364587BF45CA1DB466E9A570F2981 /* Message+Parsing.swift */,
+				896D4DC2F89C10DD00372A4D26F5DD07 /* MessageAttribute+Parsing.swift */,
+				8A91498DAEE2D26C1D8316437E3C6D1E /* MessageFlags+Parsing.swift */,
+				1970E765269A723F552B46E5BB85BE2E /* MessageHeader+Parsing.swift */,
+				5F86BF282EF21AD6B9A345E5662B8423 /* MimeFields+Parsing.swift */,
+				F00E92355230FC7C48115483562C93B9 /* MimeType+Parsing.swift */,
+				FFAFABDB4070A1F35E799D3B44D9FD1C /* Postal.swift */,
+				00E335D0568E9DD980BF43ED2623B807 /* PostalError.swift */,
+				3FCAC716A2B58393FEA43344EDF9F01C /* Util.swift */,
+				4687C71A63D3C56680C17798470D71BB /* Support Files */,
 			);
-			name = Result;
-			path = Result;
+			name = Postal;
+			path = Postal;
+			sourceTree = "<group>";
+		};
+		E0A1E60606E0BF6E2E10F1F01350DFE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBD43E0947D94E318A0ED1350CFF29ED /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1A584D21E341BA62ED2298F80006626 /* Swinject */ = {
+			isa = PBXGroup;
+			children = (
+				6ED0250FEEAC1B1D42287348AAF8D704 /* _Resolver.swift */,
+				182BF3DD3CF34D3DA991AF0838C0AFEF /* Assembler.swift */,
+				EFC380717A7035213025B81DEE255536 /* Assembly.swift */,
+				C153C9AD89F455848445FDF5EFEFA784 /* Behavior.swift */,
+				294DB1E9AE9056437BDC146701E33F63 /* Container.swift */,
+				FED680E1B874778942A692FC3C8E7489 /* Container.Arguments.swift */,
+				B4CB1C43E8A5648790B34146A7955E9B /* Container.Logging.swift */,
+				B1ABEC0CCD1193ED99A0DA71C4EC952B /* Container.TypeForwarding.swift */,
+				83C1DF622A577621B81156DA2944213B /* DebugHelper.swift */,
+				AC1A6349EEDACC44EA37652EEFA940E3 /* FunctionType.swift */,
+				48FA042AF584BF2FC2A3C3CB47FD8AAD /* GraphIdentifier.swift */,
+				22E5353B69A05079811EB2E3818D29C0 /* InstanceStorage.swift */,
+				BB9D57BE38543306739C4CCC247EABDF /* InstanceWrapper.swift */,
+				605C3A9FA797670DAC96E1069A3B81F9 /* ObjectScope.swift */,
+				6E3E8FCE0AB9C0B3579D41B963D7BF4D /* ObjectScope.Standard.swift */,
+				0AACAB4EE787E23B8A6CFF4B0DC1E453 /* Resolver.swift */,
+				7725E9EF7EDF123EB8AE6CA07FAE448B /* ServiceEntry.swift */,
+				96BFD1083D786A2CDDEAC6B0746B27F7 /* ServiceEntry.TypeForwarding.swift */,
+				93297D75B83E20EEA5F4924C29AF3F1D /* ServiceKey.swift */,
+				A5B7D47EB3E4F2C806567F057114E93D /* SpinLock.swift */,
+				4CD5B838D7820BC6C6AAD31106E8B16A /* Swinject.h */,
+				FB345E607C57CE028CD4DEDB5B7EDE62 /* SynchronizedResolver.swift */,
+				CA6F1157D18511E7C2F0B60B3C5E741A /* SynchronizedResolver.Arguments.swift */,
+				F25AB861594F13FEAC965625C1CF582A /* UnavailableItems.swift */,
+				A6FBF08B927B5F7D7D67ADD723F052D8 /* Support Files */,
+			);
+			name = Swinject;
+			path = Swinject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2EEE382B4D50E3AD46729FE69E2AE30E /* Headers */ = {
+		41BA82CA46362B8CF84B5CA4EF9742A3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21E6C7DF8B6A4A5B179A36B425890E58 /* Result-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		440E44B8EF66BFF1E70B24718EE25665 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5251BD1B1C654360E71922573DC9BE46 /* Pods-EmailFinder-umbrella.h in Headers */,
+				6319FC7C07929DF559B1F43E8C426D4F /* Postal-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,11 +451,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA811FE759A7E6050FE0CC62FE3740B1 /* Headers */ = {
+		AA1ADDA0DC60193E869C314366649FFC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B54025CC480209E6D35980769AA72492 /* Postal-umbrella.h in Headers */,
+				90581E8A3AB126FD958E6283E49928CB /* Pods-EmailFinder-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F37F708D79BEA5AF5861C4B410EDCD85 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D4DA079848B3E2E1F71DA76FA431194 /* Swinject-umbrella.h in Headers */,
+				0320BF6A9F60413E4CF1E8CFF0E5B6A4 /* Swinject.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,21 +473,38 @@
 /* Begin PBXNativeTarget section */
 		014CE582943DE44B473C7E70A5897BE2 /* Postal */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C7261E605D401348ED8980072A759C0 /* Build configuration list for PBXNativeTarget "Postal" */;
+			buildConfigurationList = EC45B01290789664214BDAAA65BA065E /* Build configuration list for PBXNativeTarget "Postal" */;
 			buildPhases = (
-				DA811FE759A7E6050FE0CC62FE3740B1 /* Headers */,
-				574D84DC2E92BA04A847D27B042EB69D /* Sources */,
-				0D812040BD1197C02EFA6FCD88A7753D /* Frameworks */,
-				26DA1D4EF55AB2681D30119ADE5707A4 /* Resources */,
+				41BA82CA46362B8CF84B5CA4EF9742A3 /* Headers */,
+				F506D3AA57573A866F7B82C255FCE4F4 /* Sources */,
+				4A6BB468DFD4DC95CE7DAADF366D0DEF /* Frameworks */,
+				71DADCD02861BC55F756BCC490DEF1B1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1DCB0477E7833BEC98F4B64B8E13576C /* PBXTargetDependency */,
 			);
 			name = Postal;
 			productName = Postal;
 			productReference = 6A4701A2D8D68404A37B897CCF29FD3E /* Postal.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		46065AF968A5A92D450BB21F7F24367D /* Swinject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60E9C8ECB8CA0FC2E5B9016923ED6B59 /* Build configuration list for PBXNativeTarget "Swinject" */;
+			buildPhases = (
+				F37F708D79BEA5AF5861C4B410EDCD85 /* Headers */,
+				9915944648A9AE227699E025EDCB54B3 /* Sources */,
+				921F4C405F0DC27F2AE44FE706FC80E8 /* Frameworks */,
+				39AE1935A8F1FFAF3EA86A36F1F7BA23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Swinject;
+			productName = Swinject;
+			productReference = 8ACA110EF3B35B3FCC08297B3799D9AD /* Swinject.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		DBBC21204B8D92E740F9D82399C6E40D /* Pods-EmailFinderTests */ = {
@@ -461,38 +526,20 @@
 			productReference = 6FF5919E3A0D3E8BA9DB25D71315FFC4 /* Pods_EmailFinderTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E163AC315AD24CFBD60C178D602BFC83 /* Result */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E80D651548F8CF6C825E6092464D8C00 /* Build configuration list for PBXNativeTarget "Result" */;
-			buildPhases = (
-				2EEE382B4D50E3AD46729FE69E2AE30E /* Headers */,
-				04CE978CB70DB694A72FC21DF3DDAE8F /* Sources */,
-				AB86CC1767E578AFC40853D5C4B3560F /* Frameworks */,
-				DD03356C4849AF40DC354ECC33FC33D4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Result;
-			productName = Result;
-			productReference = 0461B3F80FC05957690727254D64DB36 /* Result.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		F35AA12F9D1A9A2C1C47695761724D85 /* Pods-EmailFinder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 748C3A9EA290D3A863ABAB48093C1A05 /* Build configuration list for PBXNativeTarget "Pods-EmailFinder" */;
+			buildConfigurationList = 4E07703FDBD8A7F81DA3ADAA50DB1E04 /* Build configuration list for PBXNativeTarget "Pods-EmailFinder" */;
 			buildPhases = (
-				440E44B8EF66BFF1E70B24718EE25665 /* Headers */,
-				D468C0B67F07B426AF6786CEF395DB90 /* Sources */,
-				5973E1A3EB3EDC9AD6BB3F2976B4DD8E /* Frameworks */,
-				396BB01C0043B11E85487C14F9E94B1D /* Resources */,
+				AA1ADDA0DC60193E869C314366649FFC /* Headers */,
+				953352362401F23CAE5DB79D2682005C /* Sources */,
+				A98B87DFAF9B412845EAA73B121BEB92 /* Frameworks */,
+				793DD76612B27B96B5C92346CD3ADAE7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				70EFD0671488B5898340C54643F6499A /* PBXTargetDependency */,
-				D462572DC6F630A8A4FF64A003B4DD62 /* PBXTargetDependency */,
+				F432E5F3CF1977D2175007307D335B49 /* PBXTargetDependency */,
+				8C98947487D501C37112AE11AAD398F9 /* PBXTargetDependency */,
 			);
 			name = "Pods-EmailFinder";
 			productName = "Pods-EmailFinder";
@@ -509,7 +556,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -517,34 +564,34 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 91B4EA2F2884CD403BC0BD56A98FD6ED /* Products */;
+			productRefGroup = 31DEA213B61CEADC7378A152BBE82A1B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				F35AA12F9D1A9A2C1C47695761724D85 /* Pods-EmailFinder */,
 				DBBC21204B8D92E740F9D82399C6E40D /* Pods-EmailFinderTests */,
 				014CE582943DE44B473C7E70A5897BE2 /* Postal */,
-				E163AC315AD24CFBD60C178D602BFC83 /* Result */,
+				46065AF968A5A92D450BB21F7F24367D /* Swinject */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		26DA1D4EF55AB2681D30119ADE5707A4 /* Resources */ = {
+		39AE1935A8F1FFAF3EA86A36F1F7BA23 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		396BB01C0043B11E85487C14F9E94B1D /* Resources */ = {
+		71DADCD02861BC55F756BCC490DEF1B1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DD03356C4849AF40DC354ECC33FC33D4 /* Resources */ = {
+		793DD76612B27B96B5C92346CD3ADAE7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -561,55 +608,42 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		04CE978CB70DB694A72FC21DF3DDAE8F /* Sources */ = {
+		953352362401F23CAE5DB79D2682005C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9D1185E726DB659773E15F5D3104543 /* Result-dummy.m in Sources */,
-				75CAE407DB62BD2608F2E02FDD38FB15 /* Result.swift in Sources */,
-				962C12322A5687ECBF48664CFD100545 /* ResultProtocol.swift in Sources */,
+				98E449215016363CA0F9AA63F37DB692 /* Pods-EmailFinder-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		574D84DC2E92BA04A847D27B042EB69D /* Sources */ = {
+		9915944648A9AE227699E025EDCB54B3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BDCCFB2EBE78038CFBD0396CDCB3BE8 /* Address+Parsing.swift in Sources */,
-				F678A9A2C325E79DA0AC208D03CD49BC /* CertificateUtils.swift in Sources */,
-				ED1C6E350FDA83ED4E21CD16C116AF34 /* Configuration.swift in Sources */,
-				D3BB737C185A0669ABCBF8779656DA63 /* ContentDisposition+Parsing.swift in Sources */,
-				556F889A95B50A50D301FD088B70B60F /* ContentEncoding+Parsing.swift in Sources */,
-				BB67C0DA586DC3E335A5DA28C98AD107 /* Extension+Parsing.swift in Sources */,
-				253D50F94456357BF9DDACD357F23DE7 /* FetchResult.swift in Sources */,
-				E5EC6A01CF392C2BF106399418E09873 /* IMAPCapability.swift in Sources */,
-				BDBE62C21D698B57BD02DAE1A4E939E1 /* IMAPError.swift in Sources */,
-				936E8E2EEEF641E51E988D5BD9084CAE /* IMAPFolder.swift in Sources */,
-				35977CCB332437B1097623C34145E639 /* IMAPIdentity.swift in Sources */,
-				08C83FA7F6436CE72B25415FD322F70B /* IMAPNamespace.swift in Sources */,
-				0D655A68077089F99133581575C39E93 /* IMAPSession+Fetch.swift in Sources */,
-				B016EF4073BA2118895069A8E2E813B7 /* IMAPSession+Folder.swift in Sources */,
-				8849637A8D77CC02191E467AB7CB94DC /* IMAPSession+List.swift in Sources */,
-				54FF8955865C880C18C2C631EA9CDE43 /* IMAPSession+Move.swift in Sources */,
-				98B53F774C30A1E424E25C3B360F41CC /* IMAPSession+Search.swift in Sources */,
-				3004AA6827F47CE328D3B7FEF7A70164 /* IMAPSession.swift in Sources */,
-				FB4E03FD67FD387D3035F097E32A01A8 /* IMFError.swift in Sources */,
-				31DA40110CA5CEA991ECD520098F9BF5 /* Libetpan+Util.swift in Sources */,
-				CEF94186E0614FC9BD5D40DB43EB41F6 /* Logger+IMAP.swift in Sources */,
-				2AD159348DFF20001F8EDB059AD9CB78 /* Logger.swift in Sources */,
-				F56D8FEA3826A3A35006266E6374284C /* MailData+Decode.swift in Sources */,
-				57550175173BD5555AF619C357CE6BC6 /* MailPart+Enumeration.swift in Sources */,
-				B9C6D5E249D75DF7F416E8E079FABD50 /* MailPart+Parsing.swift in Sources */,
-				DE80D2CF60128228C1CFEF0D23DD1AF9 /* Message+Parsing.swift in Sources */,
-				90021A446F592537A9B91AB57CCA73C2 /* MessageAttribute+Parsing.swift in Sources */,
-				BC716B01BBA66B880C080A3534E862F1 /* MessageFlags+Parsing.swift in Sources */,
-				91F46FAF1C6CEDF63B746BE8F8246440 /* MessageHeader+Parsing.swift in Sources */,
-				24C15309ADF0E06F5B663E4AF5087088 /* MimeFields+Parsing.swift in Sources */,
-				CB437A784829FB000EBEA86722012147 /* MimeType+Parsing.swift in Sources */,
-				6FFE1820C6DE6D1A4263AF9B48DF730D /* Postal-dummy.m in Sources */,
-				F682AAE42B8701CE15227ABC957FC8D6 /* Postal.swift in Sources */,
-				25B8AB6D4CD9646B90D0F5A09FCC0E40 /* PostalError.swift in Sources */,
-				4F25D58DA4AA032E8B04BD105594BD1F /* Util.swift in Sources */,
+				A26D8000B95488FED0701DF3FFF315F8 /* _Resolver.swift in Sources */,
+				7CD92B345D1D6558C44749DE5239BEF4 /* Assembler.swift in Sources */,
+				6F14D5991C0E7E7FE61ECC622A73422A /* Assembly.swift in Sources */,
+				BFE213244C740D20A8299107F05430F8 /* Behavior.swift in Sources */,
+				A4D25312A0CC165FB3DE4A4C7B499A25 /* Container.Arguments.swift in Sources */,
+				E186B7C4EE38640DE8A407D3ADA3E743 /* Container.Logging.swift in Sources */,
+				B8761276C959268E69BE09250B9524BE /* Container.swift in Sources */,
+				B03463759CFDAE9D9412A87358AB2A83 /* Container.TypeForwarding.swift in Sources */,
+				2EE54EC7ECDA42C13C4F48916BFDB12C /* DebugHelper.swift in Sources */,
+				ADC9C062ED7E21B8581EBD3A277D5037 /* FunctionType.swift in Sources */,
+				0B4C5F38682EE4ABBA0A406C5B45897C /* GraphIdentifier.swift in Sources */,
+				5474FB639FA51C1899E1DBE4979AF188 /* InstanceStorage.swift in Sources */,
+				410D90F0983E136B023488FD8C4031D6 /* InstanceWrapper.swift in Sources */,
+				12015E8F1145CB5D99F0D9BF5AD0F3A1 /* ObjectScope.Standard.swift in Sources */,
+				2BE6C561983E03729CCF1405B3F7FBA8 /* ObjectScope.swift in Sources */,
+				5E6093189222761DABCF0ABB836CBD3F /* Resolver.swift in Sources */,
+				1D66FD7BED1FC46A46F33E685CB1ADA4 /* ServiceEntry.swift in Sources */,
+				050C568E3BA73173980F463DFB08778B /* ServiceEntry.TypeForwarding.swift in Sources */,
+				303039803386B5BFD467902899141CD2 /* ServiceKey.swift in Sources */,
+				AA3793CECFAC316243689B4CE15A6A44 /* SpinLock.swift in Sources */,
+				CA3F0FC49C8C96F986BC4B7E0EDEA044 /* Swinject-dummy.m in Sources */,
+				797F78E38B84AD04989D285EA28FBFEC /* SynchronizedResolver.Arguments.swift in Sources */,
+				2DD5198D3A7F3176CB395B0610B1E480 /* SynchronizedResolver.swift in Sources */,
+				4C4218248134D49CD349F0BC5AD11EDC /* UnavailableItems.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,40 +655,68 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D468C0B67F07B426AF6786CEF395DB90 /* Sources */ = {
+		F506D3AA57573A866F7B82C255FCE4F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31D6FCAA119D61ABF5788C69125F5E1A /* Pods-EmailFinder-dummy.m in Sources */,
+				DBDBE4FD34ED818DFF510BA4874FB112 /* Address+Parsing.swift in Sources */,
+				607C9ECA706FF0EAD987FF361033E92E /* CertificateUtils.swift in Sources */,
+				775AE4EF4221148F167CE84254753B22 /* Configuration.swift in Sources */,
+				E331A92EA4DB6068725824A69ADFA323 /* ContentDisposition+Parsing.swift in Sources */,
+				595AD299EE64989EC626613B33534DA2 /* ContentEncoding+Parsing.swift in Sources */,
+				1BF47F657C5E5128941940BB97C7EADA /* Extension+Parsing.swift in Sources */,
+				A27BB818DB384FE4A607C6E3946EFC55 /* FetchResult.swift in Sources */,
+				C18F8521DF033317A95718D2699FCD30 /* IMAPCapability.swift in Sources */,
+				7FE5602CAB3DF1F458C7B05777DD97BF /* IMAPError.swift in Sources */,
+				4AD6B3366120E6DE8AA7D9A01F781158 /* IMAPFolder.swift in Sources */,
+				41120EAA25C099C0A918E88D2222ED59 /* IMAPIdentity.swift in Sources */,
+				FBB255A81067F582B9A09A45C57FBED1 /* IMAPNamespace.swift in Sources */,
+				8163F27756B9177A85B6C6DBC4C3E0FA /* IMAPSession+Fetch.swift in Sources */,
+				B924161D2F87B859ECFA9568E0467A69 /* IMAPSession+Folder.swift in Sources */,
+				EBF9BBEECF9183A5D715535619D1AE0F /* IMAPSession+List.swift in Sources */,
+				ED2A123CB0812C9379F3DFA33007FD54 /* IMAPSession+Move.swift in Sources */,
+				55A49913D357D2D1D709969FEEF0559C /* IMAPSession+Search.swift in Sources */,
+				ADC6E6CDB67BF72551533BC4E4555213 /* IMAPSession.swift in Sources */,
+				CCA64AF64DA90EF4D29337BE7371B284 /* IMFError.swift in Sources */,
+				2C2756B5C834425A5898B49DB81C1D94 /* Libetpan+Util.swift in Sources */,
+				75DD5C3A2FADE15B645BD46CDAC19BDA /* Logger+IMAP.swift in Sources */,
+				1E56E2C8E450F41A8F1DE68A612C2B91 /* Logger.swift in Sources */,
+				0E67049ECD1CB93098B7DA486A0D8CE1 /* MailData+Decode.swift in Sources */,
+				59A49AF608F61488B0F701EDD2282DCD /* MailPart+Enumeration.swift in Sources */,
+				A749C4D3FF2A4AF126F66C600252FE1A /* MailPart+Parsing.swift in Sources */,
+				827C164ED1870132CA68289102312EB2 /* Message+Parsing.swift in Sources */,
+				48E0438DFE75DDCDB8408C0373D60FD8 /* MessageAttribute+Parsing.swift in Sources */,
+				562D0C180FDE6593236DC433F9289A49 /* MessageFlags+Parsing.swift in Sources */,
+				1D48D671015AEA1CD21D0200ED7C1E6F /* MessageHeader+Parsing.swift in Sources */,
+				85CB2853C7AEE3593C3EC57F5BBEDD04 /* MimeFields+Parsing.swift in Sources */,
+				F43ADE16043732E2543532E1AA752925 /* MimeType+Parsing.swift in Sources */,
+				5F96704D2C4650A2FB413FED0BA46C08 /* Postal-dummy.m in Sources */,
+				FB0DCDCDEAE8383DE1D9EA74E68F2325 /* Postal.swift in Sources */,
+				2565E16FBE3086C5671A69EC6BE1FF25 /* PostalError.swift in Sources */,
+				AFE71F968B696E07B462831033ABC80C /* Util.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1DCB0477E7833BEC98F4B64B8E13576C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Result;
-			target = E163AC315AD24CFBD60C178D602BFC83 /* Result */;
-			targetProxy = 61005C7EF2D45EDB6633D97CDA824FC3 /* PBXContainerItemProxy */;
-		};
-		70EFD0671488B5898340C54643F6499A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Postal;
-			target = 014CE582943DE44B473C7E70A5897BE2 /* Postal */;
-			targetProxy = C8C9ABC43A348BFC03EF91586FFA5AD0 /* PBXContainerItemProxy */;
-		};
 		71CB9F41AAE2C98FD0913C33AF56747F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-EmailFinder";
 			target = F35AA12F9D1A9A2C1C47695761724D85 /* Pods-EmailFinder */;
 			targetProxy = 8CC0558FA50D07423583E54E7B7F1851 /* PBXContainerItemProxy */;
 		};
-		D462572DC6F630A8A4FF64A003B4DD62 /* PBXTargetDependency */ = {
+		8C98947487D501C37112AE11AAD398F9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Result;
-			target = E163AC315AD24CFBD60C178D602BFC83 /* Result */;
-			targetProxy = 437556BBEE953B8D2C539567AA7F3415 /* PBXContainerItemProxy */;
+			name = Swinject;
+			target = 46065AF968A5A92D450BB21F7F24367D /* Swinject */;
+			targetProxy = 745AEE6C2A014EA38883B0712593FEBF /* PBXContainerItemProxy */;
+		};
+		F432E5F3CF1977D2175007307D335B49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Postal;
+			target = 014CE582943DE44B473C7E70A5897BE2 /* Postal */;
+			targetProxy = 294F088F94A2D58781D46948F7845577 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -759,46 +821,6 @@
 			};
 			name = Release;
 		};
-		1E241FCC81BD082E686EC21F7F48F705 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9934C118BDE5E0A2C1D617BB73152953 /* Pods-EmailFinder.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-EmailFinder/Pods-EmailFinder-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MODULEMAP_FILE = "Target Support Files/Pods-EmailFinder/Pods-EmailFinder.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		288C3B8C79EE23A11FF319505A9AFB2B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 070B2281B9146FE5CCF078FDBC088AB7 /* Pods-EmailFinderTests.debug.xcconfig */;
@@ -839,10 +861,11 @@
 			};
 			name = Debug;
 		};
-		2A322225E8EDF03E417076A9E4E266DC /* Release */ = {
+		3B1399BBD8F0A1B54067038469F1D691 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E7E1EF61A9185FEA521789409A0CDBB /* Postal.release.xcconfig */;
+			baseConfigurationReference = 864A7ADF76ABC22FFC3194C9F2612717 /* Pods-EmailFinder.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -856,26 +879,27 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/Postal/Postal-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Postal/Postal-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-EmailFinder/Pods-EmailFinder-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/Postal/Postal.modulemap";
-				PRODUCT_MODULE_NAME = Postal;
-				PRODUCT_NAME = Postal;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = "Target Support Files/Pods-EmailFinder/Pods-EmailFinder.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		6DC6BBF7D2A721A4E91A75A28EEB8E83 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -941,83 +965,9 @@
 			};
 			name = Debug;
 		};
-		7985DB25B8F0842AFCF5F7D7FFB183B0 /* Release */ = {
+		781DDA335176F1FE72842FAC421260EC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B16493D8691E421495511607129C9E5 /* Result.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/Result/Result-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Result/Result-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Target Support Files/Result/Result.modulemap";
-				PRODUCT_MODULE_NAME = Result;
-				PRODUCT_NAME = Result;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7AB137202695BC95C4F8373BB79D63E2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2DC5FA525D06774F8F52D07B41C8866A /* Result.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/Result/Result-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Result/Result-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Target Support Files/Result/Result.modulemap";
-				PRODUCT_MODULE_NAME = Result;
-				PRODUCT_NAME = Result;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7C621AE4462B349DA8BD14B5F811C865 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 864A7ADF76ABC22FFC3194C9F2612717 /* Pods-EmailFinder.debug.xcconfig */;
+			baseConfigurationReference = 9934C118BDE5E0A2C1D617BB73152953 /* Pods-EmailFinder.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -1053,11 +1003,11 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		9B45CBDF51DA8831C4ECF7FA31F6E61A /* Debug */ = {
+		8B0A68613C94116A2A5DA445C352A773 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9512C7904C15857682722727CCD39161 /* Postal.debug.xcconfig */;
+			baseConfigurationReference = 82745A84873A894D629270A8896022B4 /* Postal.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1093,6 +1043,120 @@
 			};
 			name = Debug;
 		};
+		94F4DEE70D5DFB4AB12362C9E9B6B8FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF0098C1BA61D24A06F4124E736DF9BA /* Swinject.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Swinject/Swinject-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Swinject/Swinject-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Swinject/Swinject.modulemap";
+				PRODUCT_MODULE_NAME = Swinject;
+				PRODUCT_NAME = Swinject;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D954A0F78D306E5843F77B5886432871 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D651E01AA14243B27F869B93CBA70558 /* Swinject.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Swinject/Swinject-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Swinject/Swinject-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Swinject/Swinject.modulemap";
+				PRODUCT_MODULE_NAME = Swinject;
+				PRODUCT_NAME = Swinject;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EB8E1C6D8AF44E12CFBD3A14F88C5DAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7608FFB8931E45E454A63144AAFE1375 /* Postal.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Postal/Postal-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Postal/Postal-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Postal/Postal.modulemap";
+				PRODUCT_MODULE_NAME = Postal;
+				PRODUCT_NAME = Postal;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1114,29 +1178,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		748C3A9EA290D3A863ABAB48093C1A05 /* Build configuration list for PBXNativeTarget "Pods-EmailFinder" */ = {
+		4E07703FDBD8A7F81DA3ADAA50DB1E04 /* Build configuration list for PBXNativeTarget "Pods-EmailFinder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7C621AE4462B349DA8BD14B5F811C865 /* Debug */,
-				1E241FCC81BD082E686EC21F7F48F705 /* Release */,
+				3B1399BBD8F0A1B54067038469F1D691 /* Debug */,
+				781DDA335176F1FE72842FAC421260EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C7261E605D401348ED8980072A759C0 /* Build configuration list for PBXNativeTarget "Postal" */ = {
+		60E9C8ECB8CA0FC2E5B9016923ED6B59 /* Build configuration list for PBXNativeTarget "Swinject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9B45CBDF51DA8831C4ECF7FA31F6E61A /* Debug */,
-				2A322225E8EDF03E417076A9E4E266DC /* Release */,
+				94F4DEE70D5DFB4AB12362C9E9B6B8FD /* Debug */,
+				D954A0F78D306E5843F77B5886432871 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E80D651548F8CF6C825E6092464D8C00 /* Build configuration list for PBXNativeTarget "Result" */ = {
+		EC45B01290789664214BDAAA65BA065E /* Build configuration list for PBXNativeTarget "Postal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7AB137202695BC95C4F8373BB79D63E2 /* Debug */,
-				7985DB25B8F0842AFCF5F7D7FFB183B0 /* Release */,
+				8B0A68613C94116A2A5DA445C352A773 /* Debug */,
+				EB8E1C6D8AF44E12CFBD3A14F88C5DAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

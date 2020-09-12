@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,12 @@
 		D01EEB7B250408D900B09EC7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D01EEB7A250408D900B09EC7 /* Preview Assets.xcassets */; };
 		D01EEB7E250408D900B09EC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D01EEB7C250408D900B09EC7 /* Main.storyboard */; };
 		D01EEB8A250408D900B09EC7 /* EmailFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01EEB89250408D900B09EC7 /* EmailFinderTests.swift */; };
+		D03F34A6250C2DF8001CCC97 /* MailboxDownloaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F34A5250C2DF7001CCC97 /* MailboxDownloaderViewModel.swift */; };
+		D03F34A8250C2E17001CCC97 /* MailboxDownloaderViewModelBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F34A7250C2E17001CCC97 /* MailboxDownloaderViewModelBase.swift */; };
+		D03F34AA250C31EB001CCC97 /* SharedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F34A9250C31EA001CCC97 /* SharedContainer.swift */; };
+		D03F34AB250C31EB001CCC97 /* SharedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F34A9250C31EA001CCC97 /* SharedContainer.swift */; };
+		D03F34AE250CFF83001CCC97 /* EmailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F34AD250CFF83001CCC97 /* EmailData.swift */; };
+		D03F34AF250CFF84001CCC97 /* EmailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F34AD250CFF83001CCC97 /* EmailData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +49,10 @@
 		D01EEB85250408D900B09EC7 /* EmailFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmailFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D01EEB89250408D900B09EC7 /* EmailFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailFinderTests.swift; sourceTree = "<group>"; };
 		D01EEB8B250408D900B09EC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D03F34A5250C2DF7001CCC97 /* MailboxDownloaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailboxDownloaderViewModel.swift; sourceTree = "<group>"; };
+		D03F34A7250C2E17001CCC97 /* MailboxDownloaderViewModelBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailboxDownloaderViewModelBase.swift; sourceTree = "<group>"; };
+		D03F34A9250C31EA001CCC97 /* SharedContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedContainer.swift; sourceTree = "<group>"; };
+		D03F34AD250CFF83001CCC97 /* EmailData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailData.swift; sourceTree = "<group>"; };
 		E1D1D21E0D861E3B18592CD4 /* Pods_EmailFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmailFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0AC5075256110F14FE8665 /* Pods_EmailFinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmailFinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -84,7 +94,6 @@
 				8FC90BEF146F38E6266CF3D1 /* Pods-EmailFinderTests.debug.xcconfig */,
 				9E8F0470C6E54920BB77EB65 /* Pods-EmailFinderTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -111,6 +120,8 @@
 		D01EEB72250408D400B09EC7 /* EmailFinder */ = {
 			isa = PBXGroup;
 			children = (
+				D03F34AC250CFF61001CCC97 /* Model */,
+				D03F34A4250C2DB7001CCC97 /* ViewModel */,
 				D01EEB73250408D400B09EC7 /* AppDelegate.swift */,
 				D01EEB75250408D400B09EC7 /* ContentView.swift */,
 				D01EEB77250408D900B09EC7 /* Assets.xcassets */,
@@ -118,6 +129,7 @@
 				D01EEB7F250408D900B09EC7 /* Info.plist */,
 				D01EEB80250408D900B09EC7 /* EmailFinder.entitlements */,
 				D01EEB79250408D900B09EC7 /* Preview Content */,
+				D03F34A9250C31EA001CCC97 /* SharedContainer.swift */,
 			);
 			path = EmailFinder;
 			sourceTree = "<group>";
@@ -137,6 +149,23 @@
 				D01EEB8B250408D900B09EC7 /* Info.plist */,
 			);
 			path = EmailFinderTests;
+			sourceTree = "<group>";
+		};
+		D03F34A4250C2DB7001CCC97 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D03F34A5250C2DF7001CCC97 /* MailboxDownloaderViewModel.swift */,
+				D03F34A7250C2E17001CCC97 /* MailboxDownloaderViewModelBase.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D03F34AC250CFF61001CCC97 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D03F34AD250CFF83001CCC97 /* EmailData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,8 +336,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D03F34AA250C31EB001CCC97 /* SharedContainer.swift in Sources */,
 				D01EEB76250408D400B09EC7 /* ContentView.swift in Sources */,
+				D03F34A8250C2E17001CCC97 /* MailboxDownloaderViewModelBase.swift in Sources */,
 				D01EEB74250408D400B09EC7 /* AppDelegate.swift in Sources */,
+				D03F34AE250CFF83001CCC97 /* EmailData.swift in Sources */,
+				D03F34A6250C2DF8001CCC97 /* MailboxDownloaderViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +349,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D03F34AB250C31EB001CCC97 /* SharedContainer.swift in Sources */,
+				D03F34AF250CFF84001CCC97 /* EmailData.swift in Sources */,
 				D01EEB8A250408D900B09EC7 /* EmailFinderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

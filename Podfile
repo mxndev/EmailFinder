@@ -6,7 +6,8 @@ target 'EmailFinder' do
   use_frameworks!
 
   # Pods for EmailFinder
-  pod 'Postal'
+  pod 'Postal', :git => "https://github.com/snipsco/Postal.git", :branch => 'master'
+  pod 'Swinject'
 
   target 'EmailFinderTests' do
     inherit! :search_paths

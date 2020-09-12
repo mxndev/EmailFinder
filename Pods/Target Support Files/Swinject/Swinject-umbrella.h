@@ -10,7 +10,8 @@
 #endif
 #endif
 
+#import "Swinject.h"
 
-FOUNDATION_EXPORT double ResultVersionNumber;
-FOUNDATION_EXPORT const unsigned char ResultVersionString[];
+FOUNDATION_EXPORT double SwinjectVersionNumber;
+FOUNDATION_EXPORT const unsigned char SwinjectVersionString[];
 
