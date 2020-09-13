@@ -10,22 +10,20 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
+    static let emailAdress = "" // type your email here
+    static let password = "" // type your password here
+    static let synchronizeMode: DirectorySynchronizerMode = .sender // select mode
 
     var window: NSWindow!
 
-
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Create the SwiftUI view that provides the window contents.
-        //t9m4yzcykds8xqga
+        // start synchronizer
+        MailSynchronizerViewModel.instance.runSynchronizer()
         
-        MailboxDownloaderViewModel.instance.fetchAllMessages()
-        
-//        RunLoop.main.run()
+        RunLoop.main.run()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
-
-
 }

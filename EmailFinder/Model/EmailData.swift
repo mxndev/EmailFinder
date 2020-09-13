@@ -12,6 +12,26 @@ struct EmailData {
     let senderName: String
     let senderEmail: String
     let date: Date
-    let headers: String
+    let subject: String
     let body: String
+    
+    var identifier: String {
+        return "\(senderEmail)-\(subject)-\(DateFormatter.shortFormat.string(from: date))"
+    }
+    
+    var fileName: String {
+        return "\(senderEmail)-\(subject)"
+    }
+    
+    var day: String {
+        return DateFormatter.onlyDay.string(from: date)
+    }
+    
+    var month: String {
+        return DateFormatter.onlyMonth.string(from: date)
+    }
+    
+    var year: String {
+        return DateFormatter.onlyYear.string(from: date)
+    }
 }

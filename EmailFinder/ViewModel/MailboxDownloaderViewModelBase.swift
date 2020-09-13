@@ -9,13 +9,15 @@
 import Foundation
 
 protocol MailboxDownloaderViewModelBase {
+    var delegate: MailboxDownloaderViewDelegate? { get set }
+    
     func fetchAllMessages()
 }
 
 extension MailboxDownloaderViewModelBase {
     static var instance: MailboxDownloaderViewModelBase {
         guard let resolved = SharedContainer.sharedContainer.resolve(MailboxDownloaderViewModelBase.self) else {
-            let manager = MailboxDownloaderViewModel(username: "golemtask@fastmail.com", password: "r7dwpfztch9l88uf")
+            let manager = MailboxDownloaderViewModel(username: AppDelegate.emailAdress, password: AppDelegate.password)
             SharedContainer.sharedContainer.register(MailboxDownloaderViewModelBase.self) { [manager] _ in
                 manager
             }
@@ -23,4 +25,8 @@ extension MailboxDownloaderViewModelBase {
         }
         return resolved
     }
+}
+
+protocol MailboxDownloaderViewDelegate: class {
+    func emailsFetchedSuccessfully(emails: [EmailData])
 }

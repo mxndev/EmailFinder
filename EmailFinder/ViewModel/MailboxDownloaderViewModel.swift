@@ -10,7 +10,8 @@ import Foundation
 import Postal
 
 class MailboxDownloaderViewModel: MailboxDownloaderViewModelBase {
-    
+    weak var delegate: MailboxDownloaderViewDelegate?
+
     let hostname = "imap.fastmail.com"
     let postal: Postal
     var emails: [EmailData] = []
@@ -43,11 +44,11 @@ class MailboxDownloaderViewModel: MailboxDownloaderViewModelBase {
         self.postal.fetchMessages("INBOX", uids: index, flags: [.fullHeaders, .body, .internalDate], onMessage: { message in
                 message.body?.allParts.forEach { part in
                     if part.mimeType.description == "text/plain", let from = message.header?.from.first, let date = message.internalDate, let subject = message.header?.subject, let bodyData = part.data?.decodedData {
-                        self.emails.append(EmailData(senderName: from.displayName, senderEmail: from.email, date: date, headers: subject, body: String(decoding: bodyData, as: UTF8.self)))
+                        self.emails.append(EmailData(senderName: from.displayName, senderEmail: from.email, date: date, subject: subject, body: String(decoding: bodyData, as: UTF8.self)))
                     }
                 }
-        }, onComplete: { error in
-            print(error.debugDescription)
+        }, onComplete: { _ in
+            self.delegate?.emailsFetchedSuccessfully(emails: self.emails)
         })
     }
 }

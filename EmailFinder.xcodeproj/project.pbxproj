@@ -21,6 +21,11 @@
 		D03F34AB250C31EB001CCC97 /* SharedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F34A9250C31EA001CCC97 /* SharedContainer.swift */; };
 		D03F34AE250CFF83001CCC97 /* EmailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F34AD250CFF83001CCC97 /* EmailData.swift */; };
 		D03F34AF250CFF84001CCC97 /* EmailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F34AD250CFF83001CCC97 /* EmailData.swift */; };
+		D03F34B1250D727A001CCC97 /* MailSynchronizerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F34B0250D7279001CCC97 /* MailSynchronizerViewModel.swift */; };
+		D03F34B3250D7291001CCC97 /* MailSynchronizerViewModelBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F34B2250D7291001CCC97 /* MailSynchronizerViewModelBase.swift */; };
+		D03F34B4250D7291001CCC97 /* MailSynchronizerViewModelBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F34B2250D7291001CCC97 /* MailSynchronizerViewModelBase.swift */; };
+		D03F34B6250D8CD5001CCC97 /* Formats+DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F34B5250D8CD5001CCC97 /* Formats+DateFormatter.swift */; };
+		D03F34B7250D8CD5001CCC97 /* Formats+DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F34B5250D8CD5001CCC97 /* Formats+DateFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,9 @@
 		D03F34A7250C2E17001CCC97 /* MailboxDownloaderViewModelBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailboxDownloaderViewModelBase.swift; sourceTree = "<group>"; };
 		D03F34A9250C31EA001CCC97 /* SharedContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedContainer.swift; sourceTree = "<group>"; };
 		D03F34AD250CFF83001CCC97 /* EmailData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailData.swift; sourceTree = "<group>"; };
+		D03F34B0250D7279001CCC97 /* MailSynchronizerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailSynchronizerViewModel.swift; sourceTree = "<group>"; };
+		D03F34B2250D7291001CCC97 /* MailSynchronizerViewModelBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailSynchronizerViewModelBase.swift; sourceTree = "<group>"; };
+		D03F34B5250D8CD5001CCC97 /* Formats+DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Formats+DateFormatter.swift"; sourceTree = "<group>"; };
 		E1D1D21E0D861E3B18592CD4 /* Pods_EmailFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmailFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0AC5075256110F14FE8665 /* Pods_EmailFinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmailFinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -120,16 +128,17 @@
 		D01EEB72250408D400B09EC7 /* EmailFinder */ = {
 			isa = PBXGroup;
 			children = (
-				D03F34AC250CFF61001CCC97 /* Model */,
-				D03F34A4250C2DB7001CCC97 /* ViewModel */,
 				D01EEB73250408D400B09EC7 /* AppDelegate.swift */,
-				D01EEB75250408D400B09EC7 /* ContentView.swift */,
 				D01EEB77250408D900B09EC7 /* Assets.xcassets */,
-				D01EEB7C250408D900B09EC7 /* Main.storyboard */,
-				D01EEB7F250408D900B09EC7 /* Info.plist */,
+				D01EEB75250408D400B09EC7 /* ContentView.swift */,
 				D01EEB80250408D900B09EC7 /* EmailFinder.entitlements */,
+				D03F34B5250D8CD5001CCC97 /* Formats+DateFormatter.swift */,
+				D01EEB7F250408D900B09EC7 /* Info.plist */,
+				D01EEB7C250408D900B09EC7 /* Main.storyboard */,
+				D03F34AC250CFF61001CCC97 /* Model */,
 				D01EEB79250408D900B09EC7 /* Preview Content */,
 				D03F34A9250C31EA001CCC97 /* SharedContainer.swift */,
+				D03F34A4250C2DB7001CCC97 /* ViewModel */,
 			);
 			path = EmailFinder;
 			sourceTree = "<group>";
@@ -156,6 +165,8 @@
 			children = (
 				D03F34A5250C2DF7001CCC97 /* MailboxDownloaderViewModel.swift */,
 				D03F34A7250C2E17001CCC97 /* MailboxDownloaderViewModelBase.swift */,
+				D03F34B0250D7279001CCC97 /* MailSynchronizerViewModel.swift */,
+				D03F34B2250D7291001CCC97 /* MailSynchronizerViewModelBase.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -337,10 +348,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D03F34AA250C31EB001CCC97 /* SharedContainer.swift in Sources */,
+				D03F34B6250D8CD5001CCC97 /* Formats+DateFormatter.swift in Sources */,
 				D01EEB76250408D400B09EC7 /* ContentView.swift in Sources */,
+				D03F34B1250D727A001CCC97 /* MailSynchronizerViewModel.swift in Sources */,
 				D03F34A8250C2E17001CCC97 /* MailboxDownloaderViewModelBase.swift in Sources */,
 				D01EEB74250408D400B09EC7 /* AppDelegate.swift in Sources */,
 				D03F34AE250CFF83001CCC97 /* EmailData.swift in Sources */,
+				D03F34B3250D7291001CCC97 /* MailSynchronizerViewModelBase.swift in Sources */,
 				D03F34A6250C2DF8001CCC97 /* MailboxDownloaderViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,7 +364,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D03F34AB250C31EB001CCC97 /* SharedContainer.swift in Sources */,
+				D03F34B7250D8CD5001CCC97 /* Formats+DateFormatter.swift in Sources */,
 				D03F34AF250CFF84001CCC97 /* EmailData.swift in Sources */,
+				D03F34B4250D7291001CCC97 /* MailSynchronizerViewModelBase.swift in Sources */,
 				D01EEB8A250408D900B09EC7 /* EmailFinderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
