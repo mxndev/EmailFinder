@@ -20,27 +20,34 @@ class MailboxDownloaderViewModel: MailboxDownloaderViewModelBase {
         self.postal = Postal(configuration: Configuration(hostname: hostname, port: 993, login: username, password: PasswordType.plain(password), connectionType: .tls, checkCertificateEnabled: true))
     }
     
-    func fetchAllMessages() {
-        emails.removeAll()
+    func connectToServer(fetchMails: Bool) {
         postal.connect(timeout: Postal.defaultTimeout, completion: { [weak self] result in
             guard let self = self else { return }
             switch result {
                 case .success:
-                    self.postal.search("INBOX", filter: .all, completion: { result in
-                        switch result {
-                            case .success(let index):
-                                self.fetchMails(by: index)
-                            case .failure(let error):
-                                print(error)
-                        }
-                    })
+                    if fetchMails { self.fetchAllMessages(retry: false, semaphore: nil) }
                 case .failure(let error):
                     print(error)
             }
         })
     }
     
-    private func fetchMails(by index: IndexSet) {
+    func fetchAllMessages(retry: Bool, semaphore: DispatchSemaphore?) {
+        emails.removeAll()
+        postal.search("INBOX", filter: .all, completion: { [weak self] result in
+            guard let self = self else { return }
+            switch result {
+                case .success(let index):
+                    self.fetchMails(by: index, semaphore: semaphore)
+                case .failure(let error):
+                    // if first attempt try to connect and fetch data
+                    if retry { self.connectToServer(fetchMails: true) }
+                    print(error)
+            }
+        })
+    }
+    
+    private func fetchMails(by index: IndexSet, semaphore: DispatchSemaphore?) {
         self.postal.fetchMessages("INBOX", uids: index, flags: [.fullHeaders, .body, .internalDate], onMessage: { message in
                 message.body?.allParts.forEach { part in
                     if part.mimeType.description == "text/plain", let from = message.header?.from.first, let date = message.internalDate, let subject = message.header?.subject, let bodyData = part.data?.decodedData {
@@ -48,7 +55,20 @@ class MailboxDownloaderViewModel: MailboxDownloaderViewModelBase {
                     }
                 }
         }, onComplete: { _ in
-            self.delegate?.emailsFetchedSuccessfully(emails: self.emails)
+            self.delegate?.emailsFetchedSuccessfully(semaphore: semaphore)
         })
+    }
+}
+
+extension MailboxDownloaderViewModelBase {
+    static var instance: MailboxDownloaderViewModelBase {
+        guard let resolved = SharedContainer.sharedContainer.resolve(MailboxDownloaderViewModelBase.self) else {
+            let manager = MailboxDownloaderViewModel(username: AppDelegate.emailAdress, password: AppDelegate.password)
+            SharedContainer.sharedContainer.register(MailboxDownloaderViewModelBase.self) { [manager] _ in
+                manager
+            }
+            return manager
+        }
+        return resolved
     }
 }

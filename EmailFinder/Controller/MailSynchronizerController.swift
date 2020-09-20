@@ -1,5 +1,5 @@
 //
-//  MailSynchronizerViewModel.swift
+//  MailSynchronizerController.swift
 //  EmailFinder
 //
 //  Created by Mikołaj Płachta on 12/09/2020.
@@ -13,42 +13,45 @@ enum DirectorySynchronizerMode {
     case sender
 }
 
-class MailSynchronizerViewModel: MailSynchronizerViewModelBase {
+class MailSynchronizerController {
     var mailboxDownloader: MailboxDownloaderViewModelBase
     var startTimestamp: Date = Date()
     let fileManager = FileManager.default
-    let mode: DirectorySynchronizerMode
+    var mode: DirectorySynchronizerMode = .timeline
 
-    init(mailDownloader: MailboxDownloaderViewModelBase, synchronizeMode: DirectorySynchronizerMode) {
+    init(mailDownloader: MailboxDownloaderViewModelBase) {
         self.mailboxDownloader = mailDownloader
-        self.mode = synchronizeMode
         self.mailboxDownloader.delegate = self
     }
     
-    func runSynchronizer() {
+    // use semaphore for prepare ability to proper testing
+    func runSynchronizer(semaphore: DispatchSemaphore?) {
         DispatchQueue.global(qos: .background).async {
-            self.mailboxDownloader.fetchAllMessages()
+            self.mailboxDownloader.fetchAllMessages(retry: true, semaphore: semaphore)
         }
     }
     
-    private func generateFiles(for mode: DirectorySynchronizerMode, email: EmailData) {
+    func setSynchronizationMode(mode: DirectorySynchronizerMode) {
+        self.mode = mode
+    }
+    
+    private func generateFiles(for email: EmailData, siblingIndex: Int?) {
         if let desktopDirectory = fileManager.urls(for: .desktopDirectory, in: .userDomainMask).first {
-            let amountOfFiles = amountOfSimilarNames(for: email, mode: mode)
             var fileDirectory: URL
             
-            switch mode {
+            switch self.mode {
                 case .sender:
                     fileDirectory = desktopDirectory.appendingPathComponent("EmailsFinder/sender/\(email.senderEmail)/")
                 case .timeline:
                     fileDirectory = desktopDirectory.appendingPathComponent("EmailsFinder/timeline/\(email.year)/\(email.month)/\(email.day)/")
             }
             do {
-                if !FileManager.default.fileExists(atPath: fileDirectory.absoluteString.replacingOccurrences(of: "file://", with: "")) {
-                    try FileManager.default.createDirectory(atPath: fileDirectory.absoluteString.replacingOccurrences(of: "file://", with: ""), withIntermediateDirectories: true, attributes: nil)
+                if !fileManager.fileExists(atPath: fileDirectory.path) {
+                    try fileManager.createDirectory(atPath: fileDirectory.path, withIntermediateDirectories: true, attributes: nil)
                 }
                 
-                if amountOfFiles > 0 {
-                    fileDirectory = fileDirectory.appendingPathComponent("\(email.fileName)-\(amountOfFiles+1).txt")
+                if let indexOfSigling = siblingIndex {
+                    fileDirectory = fileDirectory.appendingPathComponent("\(email.fileName)-\(indexOfSigling+1).txt")
                 } else {
                     fileDirectory = fileDirectory.appendingPathComponent("\(email.fileName).txt")
                 }
@@ -61,28 +64,18 @@ class MailSynchronizerViewModel: MailSynchronizerViewModelBase {
         }
     }
     
-    private func amountOfSimilarNames(for email: EmailData, mode: DirectorySynchronizerMode) -> Int {
-        if let desktopDirectory = fileManager.urls(for: .desktopDirectory, in: .userDomainMask).first {
-            let fileDirectory: URL
-            switch mode {
+    // siblings - files with similar names in the same folder
+    func generateSiblingsForEmails() -> [Int?] {
+        var siblings: [(EmailData, Int?)] = []
+        mailboxDownloader.emails.forEach { email in
+            switch self.mode {
                 case .sender:
-                    fileDirectory = desktopDirectory.appendingPathComponent("EmailsFinder/sender/\(email.senderEmail)/")
+                    siblings.append((email, mailboxDownloader.emails.filter({ $0.fileName == email.fileName && $0.senderEmail == email.senderEmail }).count > 1 ? siblings.filter({ $0.0.fileName == email.fileName && $0.0.senderEmail == email.senderEmail }).count : nil))
                 case .timeline:
-                    fileDirectory = desktopDirectory.appendingPathComponent("EmailsFinder/timeline/\(email.year)/\(email.month)/\(email.day)/")
-            }
-            
-            do {
-                if !FileManager.default.fileExists(atPath: fileDirectory.absoluteString.replacingOccurrences(of: "file://", with: "")) {
-                    try FileManager.default.createDirectory(atPath: fileDirectory.absoluteString.replacingOccurrences(of: "file://", with: ""), withIntermediateDirectories: true, attributes: nil)
-                }
-                
-                let directoryContents = try FileManager.default.contentsOfDirectory(at: fileDirectory, includingPropertiesForKeys: nil)
-                return directoryContents.filter({ $0.absoluteString.contains(email.fileName) }).count
-            } catch {
-                print(error)
+                    siblings.append((email, mailboxDownloader.emails.filter({ $0.fileName == email.fileName && $0.year == email.year && $0.month == email.month && $0.day == email.day }).count > 1 ? siblings.filter({ $0.0.fileName == email.fileName && $0.0.year == email.year && $0.0.month == email.month && $0.0.day == email.day }).count : nil))
             }
         }
-        return 0
+        return siblings.map { ($0.1) }
     }
     
     private func clearFilesWithOldTimestamp() {
@@ -91,12 +84,12 @@ class MailSynchronizerViewModel: MailSynchronizerViewModelBase {
             
             do {
                 let resourceKeys : [URLResourceKey] = [.isDirectoryKey, .contentModificationDateKey]
-                let enumerator = fileManager.enumerator(at: fileDirectory, includingPropertiesForKeys: resourceKeys, options: [.skipsHiddenFiles], errorHandler: nil)!
-
-                for case let fileURL as URL in enumerator {
-                    let resourceValues = try fileURL.resourceValues(forKeys: Set(resourceKeys))
-                    if !(resourceValues.isDirectory ?? true), let modificationDate = resourceValues.contentModificationDate, modificationDate < startTimestamp {
-                        try fileManager.removeItem(at: fileURL)
+                if let enumerator = fileManager.enumerator(at: fileDirectory, includingPropertiesForKeys: resourceKeys, options: [], errorHandler: nil) {
+                    for case let fileURL as URL in enumerator {
+                        let resourceValues = try fileURL.resourceValues(forKeys: Set(resourceKeys))
+                        if !(resourceValues.isDirectory ?? true), let modificationDate = resourceValues.contentModificationDate, modificationDate < startTimestamp {
+                            try fileManager.removeItem(at: fileURL)
+                        }
                     }
                 }
             } catch {
@@ -114,7 +107,7 @@ class MailSynchronizerViewModel: MailSynchronizerViewModelBase {
                 
                 do {
                     let resourceKeys : [URLResourceKey] = [.isDirectoryKey]
-                    if let enumerator = fileManager.enumerator(at: fileDirectory, includingPropertiesForKeys: resourceKeys, options: [.skipsHiddenFiles], errorHandler: nil) {
+                    if let enumerator = fileManager.enumerator(at: fileDirectory, includingPropertiesForKeys: resourceKeys, options: [], errorHandler: nil) {
                         for case let fileURL as URL in enumerator {
                             let resourceValues = try fileURL.resourceValues(forKeys: Set(resourceKeys))
                             if resourceValues.isDirectory ?? false {
@@ -134,20 +127,23 @@ class MailSynchronizerViewModel: MailSynchronizerViewModelBase {
     }
 }
 
-extension MailSynchronizerViewModel: MailboxDownloaderViewDelegate {
-    func emailsFetchedSuccessfully(emails: [EmailData]) {
+extension MailSynchronizerController: MailboxDownloaderViewDelegate {
+    func emailsFetchedSuccessfully(semaphore: DispatchSemaphore?) {
         startTimestamp = Date()
-        emails.forEach {
-            generateFiles(for: self.mode, email: $0)
+        let siblings = generateSiblingsForEmails()
+        for (index, element) in mailboxDownloader.emails.enumerated() {
+            generateFiles(for: element, siblingIndex: siblings[index])
         }
         
         // remove old files & empty directories for both modes
         clearFilesWithOldTimestamp()
         clearEmptyDirectories()
         
+        semaphore?.signal()
+        
         // schedule next sync
         DispatchQueue.global(qos: .background).asyncAfter(deadline: .now() + (3*60)) {
-            self.mailboxDownloader.fetchAllMessages()
+            self.mailboxDownloader.fetchAllMessages(retry: true, semaphore: nil)
         }
     }
 }

@@ -10,23 +10,12 @@ import Foundation
 
 protocol MailboxDownloaderViewModelBase {
     var delegate: MailboxDownloaderViewDelegate? { get set }
-    
-    func fetchAllMessages()
-}
+    var emails: [EmailData] { get set }
 
-extension MailboxDownloaderViewModelBase {
-    static var instance: MailboxDownloaderViewModelBase {
-        guard let resolved = SharedContainer.sharedContainer.resolve(MailboxDownloaderViewModelBase.self) else {
-            let manager = MailboxDownloaderViewModel(username: AppDelegate.emailAdress, password: AppDelegate.password)
-            SharedContainer.sharedContainer.register(MailboxDownloaderViewModelBase.self) { [manager] _ in
-                manager
-            }
-            return manager
-        }
-        return resolved
-    }
+    func connectToServer(fetchMails: Bool)
+    func fetchAllMessages(retry: Bool, semaphore: DispatchSemaphore?)
 }
 
 protocol MailboxDownloaderViewDelegate: class {
-    func emailsFetchedSuccessfully(emails: [EmailData])
+    func emailsFetchedSuccessfully(semaphore: DispatchSemaphore?)
 }
