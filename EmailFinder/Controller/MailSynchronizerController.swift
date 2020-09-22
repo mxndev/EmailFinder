@@ -11,6 +11,7 @@ import Foundation
 enum DirectorySynchronizerMode {
     case timeline
     case sender
+    case topics
 }
 
 class MailSynchronizerController {
@@ -18,10 +19,12 @@ class MailSynchronizerController {
     var startTimestamp: Date = Date()
     let fileManager = FileManager.default
     var mode: DirectorySynchronizerMode = .timeline
+    var timeBetweenSyncCalls: Int = 0
 
-    init(mailDownloader: MailboxDownloaderViewModelBase) {
+    init(mailDownloader: MailboxDownloaderViewModelBase, timeBetweenSyncCalls: Int) {
         self.mailboxDownloader = mailDownloader
         self.mailboxDownloader.delegate = self
+        self.timeBetweenSyncCalls = timeBetweenSyncCalls
     }
     
     // use semaphore for prepare ability to proper testing
@@ -44,6 +47,8 @@ class MailSynchronizerController {
                     fileDirectory = desktopDirectory.appendingPathComponent("EmailsFinder/sender/\(email.senderEmail)/")
                 case .timeline:
                     fileDirectory = desktopDirectory.appendingPathComponent("EmailsFinder/timeline/\(email.year)/\(email.month)/\(email.day)/")
+                case .topics:
+                    fileDirectory = desktopDirectory.appendingPathComponent("EmailsFinder/topics/\(email.folderName)/")
             }
             do {
                 if !fileManager.fileExists(atPath: fileDirectory.path) {
@@ -73,6 +78,8 @@ class MailSynchronizerController {
                     siblings.append((email, mailboxDownloader.emails.filter({ $0.fileName == email.fileName && $0.senderEmail == email.senderEmail }).count > 1 ? siblings.filter({ $0.0.fileName == email.fileName && $0.0.senderEmail == email.senderEmail }).count : nil))
                 case .timeline:
                     siblings.append((email, mailboxDownloader.emails.filter({ $0.fileName == email.fileName && $0.year == email.year && $0.month == email.month && $0.day == email.day }).count > 1 ? siblings.filter({ $0.0.fileName == email.fileName && $0.0.year == email.year && $0.0.month == email.month && $0.0.day == email.day }).count : nil))
+                case .topics:
+                    siblings.append((email, mailboxDownloader.emails.filter({ $0.fileName == email.fileName && $0.folderName == email.folderName }).count > 1 ? siblings.filter({ $0.0.fileName == email.fileName && $0.0.folderName == email.folderName }).count : nil))
             }
         }
         return siblings.map { ($0.1) }
@@ -142,7 +149,7 @@ extension MailSynchronizerController: MailboxDownloaderViewDelegate {
         semaphore?.signal()
         
         // schedule next sync
-        DispatchQueue.global(qos: .background).asyncAfter(deadline: .now() + (3*60)) {
+        DispatchQueue.global(qos: .background).asyncAfter(deadline: .now() + DispatchTimeInterval.seconds(timeBetweenSyncCalls*60)) {
             self.mailboxDownloader.fetchAllMessages(retry: true, semaphore: nil)
         }
     }

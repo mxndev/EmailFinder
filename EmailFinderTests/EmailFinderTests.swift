@@ -14,7 +14,7 @@ class EmailFinderTests: XCTestCase {
 
     override func setUpWithError() throws {
         // initialize synchronizers
-        mailSynchronizer = MailSynchronizerController(mailDownloader: MailboxDownloaderViewModelMock.mockInstance)
+        mailSynchronizer = MailSynchronizerController(mailDownloader: MailboxDownloaderViewModelMock.mockInstance, timeBetweenSyncCalls: 3)
     }
 
     override func tearDownWithError() throws {
@@ -31,6 +31,13 @@ class EmailFinderTests: XCTestCase {
     func testSiblingsForSenderMode() throws {
         let properValues: [Int?] = [0, 1, 0, nil, nil, nil, 1, 2]
         mailSynchronizer?.setSynchronizationMode(mode: .sender)
+        let testValues = mailSynchronizer?.generateSiblingsForEmails()
+        XCTAssert(testValues == properValues)
+    }
+    
+    func testSiblingsForTopicsMode() throws {
+        let properValues: [Int?] = [nil, nil, nil, nil, nil, nil, 0, 1]
+        mailSynchronizer?.setSynchronizationMode(mode: .topics)
         let testValues = mailSynchronizer?.generateSiblingsForEmails()
         XCTAssert(testValues == properValues)
     }
@@ -73,6 +80,33 @@ class EmailFinderTests: XCTestCase {
             var listOfFiles: [Bool] = []
             for (index, email) in emails.enumerated() {
                 var fileDirectory = desktopDirectory.appendingPathComponent("EmailsFinder/sender/\(email.senderEmail)/")
+                
+                if let indexOfSigling = siblings?[index] {
+                    fileDirectory = fileDirectory.appendingPathComponent("\(email.fileName)-\(indexOfSigling+1).txt")
+                } else {
+                    fileDirectory = fileDirectory.appendingPathComponent("\(email.fileName).txt")
+                }
+                
+                listOfFiles.append(mailSynchronizer?.fileManager.fileExists(atPath: fileDirectory.path) ?? false)
+            }
+            let oldFiles = checkAmountOfOldFiles(startTimestamp: startTimestamp)
+            XCTAssert((listOfFiles.filter({ $0 == true }).count == emails.count) && (oldFiles == 0))
+        } else {
+            XCTAssert(false)
+        }
+    }
+    
+    func testFilesStructureForTopicsMode() throws {
+        let startTimestamp = Date()
+        mailSynchronizer?.setSynchronizationMode(mode: .topics)
+        let semaphore = DispatchSemaphore(value: 0)
+        mailSynchronizer?.runSynchronizer(semaphore: semaphore)
+        semaphore.wait()
+        let siblings = mailSynchronizer?.generateSiblingsForEmails()
+        if let desktopDirectory = mailSynchronizer?.fileManager.urls(for: .desktopDirectory, in: .userDomainMask).first, let emails = mailSynchronizer?.mailboxDownloader.emails {
+            var listOfFiles: [Bool] = []
+            for (index, email) in emails.enumerated() {
+                var fileDirectory = desktopDirectory.appendingPathComponent("EmailsFinder/topics/\(email.folderName)/")
                 
                 if let indexOfSigling = siblings?[index] {
                     fileDirectory = fileDirectory.appendingPathComponent("\(email.fileName)-\(indexOfSigling+1).txt")

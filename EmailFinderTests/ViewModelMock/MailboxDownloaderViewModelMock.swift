@@ -15,14 +15,14 @@ class MailboxDownloaderViewModelMock: MailboxDownloaderViewModelBase {
     init() {
         // init mock messsages
         emails.append(contentsOf: [
-            EmailData(senderName: "Test1", senderEmail: "test1@fastmail.com", date: DateFormatter.shortFormat.date(from: "2020-07-22") ?? Date(), subject: "This is a test subject", body: "blabla"),
-            EmailData(senderName: "Test1", senderEmail: "test1@fastmail.com", date: DateFormatter.shortFormat.date(from: "2020-07-22") ?? Date(), subject: "This is a test subject", body: "blabla2"),
-            EmailData(senderName: "Test2", senderEmail: "test2@fastmail.com", date: DateFormatter.shortFormat.date(from: "2020-07-22") ?? Date(), subject: "This is a test subject", body: "blabla"),
-            EmailData(senderName: "Test3", senderEmail: "test3@fastmail.com", date: DateFormatter.shortFormat.date(from: "2020-07-22") ?? Date(), subject: "This is a test subject", body: "blabla"),
-            EmailData(senderName: "Test1", senderEmail: "test@fastmail.com", date: DateFormatter.shortFormat.date(from: "2020-08-22") ?? Date(), subject: "This is a test subject2", body: "blabla"),
-            EmailData(senderName: "Test2", senderEmail: "test2@fastmail.com", date: DateFormatter.shortFormat.date(from: "2020-08-22") ?? Date(), subject: "This is a test subject2", body: "blabla"),
-            EmailData(senderName: "Test2", senderEmail: "test2@fastmail.com", date: DateFormatter.shortFormat.date(from: "2020-08-23") ?? Date(), subject: "This is a test subject", body: "blabla"),
-            EmailData(senderName: "Test2", senderEmail: "test2@fastmail.com", date: DateFormatter.shortFormat.date(from: "2020-08-24") ?? Date(), subject: "This is a test subject", body: "blabla"),
+            EmailData(folderName: "Main", senderName: "Test1", senderEmail: "test1@fastmail.com", date: DateFormatter.shortFormat.date(from: "2020-07-22") ?? Date(), subject: "This is a test subject", body: "blabla"),
+            EmailData(folderName: "Main2", senderName: "Test1", senderEmail: "test1@fastmail.com", date: DateFormatter.shortFormat.date(from: "2020-07-22") ?? Date(), subject: "This is a test subject", body: "blabla2"),
+            EmailData(folderName: "Archive", senderName: "Test2", senderEmail: "test2@fastmail.com", date: DateFormatter.shortFormat.date(from: "2020-07-22") ?? Date(), subject: "This is a test subject", body: "blabla"),
+            EmailData(folderName: "Archive", senderName: "Test3", senderEmail: "test3@fastmail.com", date: DateFormatter.shortFormat.date(from: "2020-07-22") ?? Date(), subject: "This is a test subject", body: "blabla"),
+            EmailData(folderName: "Archive/Test", senderName: "Test1", senderEmail: "test@fastmail.com", date: DateFormatter.shortFormat.date(from: "2020-08-22") ?? Date(), subject: "This is a test subject2", body: "blabla"),
+            EmailData(folderName: "Main2", senderName: "Test2", senderEmail: "test2@fastmail.com", date: DateFormatter.shortFormat.date(from: "2020-08-22") ?? Date(), subject: "This is a test subject2", body: "blabla"),
+            EmailData(folderName: "Main", senderName: "Test2", senderEmail: "test2@fastmail.com", date: DateFormatter.shortFormat.date(from: "2020-08-23") ?? Date(), subject: "This is a test subject", body: "blabla"),
+            EmailData(folderName: "Main", senderName: "Test2", senderEmail: "test2@fastmail.com", date: DateFormatter.shortFormat.date(from: "2020-08-24") ?? Date(), subject: "This is a test subject", body: "blabla"),
         ])
     }
     

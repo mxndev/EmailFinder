@@ -9,6 +9,7 @@
 import Foundation
 
 struct EmailData {
+    let folderName: String
     let senderName: String
     let senderEmail: String
     let date: Date

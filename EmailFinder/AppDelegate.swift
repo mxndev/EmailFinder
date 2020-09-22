@@ -11,11 +11,13 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
     // config
-    static let emailAdress = "golemtask@fastmail.com" // type your email here
-    static let password = "r7dwpfztch9l88uf" // type your password here
-    static let synchronizeMode: DirectorySynchronizerMode = .sender // select mode
+    static let emailAdress = "" // type your email here
+    static let password = "" // type your password here
+    static let synchronizeMode: DirectorySynchronizerMode = .topics // select mode
+    static let timeBetweenSyncCalls: Int = 3 // time in minutes
+    static let exludedFolders: [String] = ["Sent", "Drafts", "Spam", "Trash", "Archive"] // excluded folders or subfolders - Sent & Drafts, because it belongs to sending functionality and SPAM, Trash & Archive because in my opinion that emails should be synchronized, but it can be changed easily
 
-    var mailSynchronizer: MailSynchronizerController! = MailSynchronizerController(mailDownloader: MailboxDownloaderViewModel.instance)
+    var mailSynchronizer: MailSynchronizerController! = MailSynchronizerController(mailDownloader: MailboxDownloaderViewModel.instance, timeBetweenSyncCalls: AppDelegate.timeBetweenSyncCalls)
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // connect to server
