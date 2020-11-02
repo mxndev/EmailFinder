@@ -16,9 +16,11 @@
 		1D48D671015AEA1CD21D0200ED7C1E6F /* MessageHeader+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970E765269A723F552B46E5BB85BE2E /* MessageHeader+Parsing.swift */; };
 		1D66FD7BED1FC46A46F33E685CB1ADA4 /* ServiceEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7725E9EF7EDF123EB8AE6CA07FAE448B /* ServiceEntry.swift */; };
 		1E56E2C8E450F41A8F1DE68A612C2B91 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBCEEFBE6483A8DAB5D50C290C545FE /* Logger.swift */; };
+		241BA78936A774CB065EB51493C429F9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */; };
 		2565E16FBE3086C5671A69EC6BE1FF25 /* PostalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E335D0568E9DD980BF43ED2623B807 /* PostalError.swift */; };
 		2BE6C561983E03729CCF1405B3F7FBA8 /* ObjectScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605C3A9FA797670DAC96E1069A3B81F9 /* ObjectScope.swift */; };
 		2C2756B5C834425A5898B49DB81C1D94 /* Libetpan+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D87F20782F7EBBECBB51B43A2942A2A /* Libetpan+Util.swift */; };
+		2D9264F4F77CFB359468F8803118E4B9 /* Pods-EmailFinder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DB94DC7A6525D4D846A1D9155F03E62C /* Pods-EmailFinder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2DD5198D3A7F3176CB395B0610B1E480 /* SynchronizedResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB345E607C57CE028CD4DEDB5B7EDE62 /* SynchronizedResolver.swift */; };
 		2EE54EC7ECDA42C13C4F48916BFDB12C /* DebugHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C1DF622A577621B81156DA2944213B /* DebugHelper.swift */; };
 		303039803386B5BFD467902899141CD2 /* ServiceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93297D75B83E20EEA5F4924C29AF3F1D /* ServiceKey.swift */; };
@@ -30,71 +32,69 @@
 		5474FB639FA51C1899E1DBE4979AF188 /* InstanceStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E5353B69A05079811EB2E3818D29C0 /* InstanceStorage.swift */; };
 		55A49913D357D2D1D709969FEEF0559C /* IMAPSession+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67568B943B9C8CCC980AE86463FA70C /* IMAPSession+Search.swift */; };
 		562D0C180FDE6593236DC433F9289A49 /* MessageFlags+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A91498DAEE2D26C1D8316437E3C6D1E /* MessageFlags+Parsing.swift */; };
-		57D58444379866B44A4D71BB26F0A0CB /* Pods-EmailFinderTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF133F4DE39D300CF1AF85ED6ADFB7E9 /* Pods-EmailFinderTests-dummy.m */; };
 		595AD299EE64989EC626613B33534DA2 /* ContentEncoding+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB322284B10CCD579C0306EC1AB55C3 /* ContentEncoding+Parsing.swift */; };
 		59A49AF608F61488B0F701EDD2282DCD /* MailPart+Enumeration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C2D4CC71850B2382E2322A188A5917 /* MailPart+Enumeration.swift */; };
-		5B5522003526B92A73CF764CDDE64758 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */; };
 		5E6093189222761DABCF0ABB836CBD3F /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AACAB4EE787E23B8A6CFF4B0DC1E453 /* Resolver.swift */; };
 		5F96704D2C4650A2FB413FED0BA46C08 /* Postal-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 149A4D8DEF10C85936A14B4FF2ADC013 /* Postal-dummy.m */; };
 		607C9ECA706FF0EAD987FF361033E92E /* CertificateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC86DE56C676F16FD364D4257DB621E1 /* CertificateUtils.swift */; };
-		6139236F1E6F367EA321E01B703E183E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */; };
-		620F692A24865770EA9AE6BDAEA40D0D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */; };
 		6319FC7C07929DF559B1F43E8C426D4F /* Postal-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E84F272A3E2CA286118C80B0EB9EAB37 /* Postal-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6F14D5991C0E7E7FE61ECC622A73422A /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC380717A7035213025B81DEE255536 /* Assembly.swift */; };
-		713629BDD2EB72B1D5E25AC2836A7F20 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */; };
 		75DD5C3A2FADE15B645BD46CDAC19BDA /* Logger+IMAP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3037A567EC2B258E4B7F6276118AE85A /* Logger+IMAP.swift */; };
 		775AE4EF4221148F167CE84254753B22 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C20CB2EF629466D3D345A6FECFBEFF3 /* Configuration.swift */; };
 		797F78E38B84AD04989D285EA28FBFEC /* SynchronizedResolver.Arguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6F1157D18511E7C2F0B60B3C5E741A /* SynchronizedResolver.Arguments.swift */; };
 		7CD92B345D1D6558C44749DE5239BEF4 /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182BF3DD3CF34D3DA991AF0838C0AFEF /* Assembler.swift */; };
 		7D4DA079848B3E2E1F71DA76FA431194 /* Swinject-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C6FC00ACFFBC54E452271F5040F2672 /* Swinject-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EC63C0D568E7F6470C78A77AFB84D45 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */; };
 		7FE5602CAB3DF1F458C7B05777DD97BF /* IMAPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CCE2FA0F37F23111D20F6227147559 /* IMAPError.swift */; };
 		8163F27756B9177A85B6C6DBC4C3E0FA /* IMAPSession+Fetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD146C5860F72534D44ABFC6EE268D7 /* IMAPSession+Fetch.swift */; };
 		827C164ED1870132CA68289102312EB2 /* Message+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906364587BF45CA1DB466E9A570F2981 /* Message+Parsing.swift */; };
 		85CB2853C7AEE3593C3EC57F5BBEDD04 /* MimeFields+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F86BF282EF21AD6B9A345E5662B8423 /* MimeFields+Parsing.swift */; };
-		90581E8A3AB126FD958E6283E49928CB /* Pods-EmailFinder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DB94DC7A6525D4D846A1D9155F03E62C /* Pods-EmailFinder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		98E449215016363CA0F9AA63F37DB692 /* Pods-EmailFinder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C414F32F750EBCBFD30D0CDB1618E9A /* Pods-EmailFinder-dummy.m */; };
+		993A48F1310FF2646F98738D4CE058A5 /* Pods-EmailFinderTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 43F9625A2EE90C19D80A3B121D0F4CB3 /* Pods-EmailFinderTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E29E464B5B0FB7F5B675A1894A9C68D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */; };
 		A26D8000B95488FED0701DF3FFF315F8 /* _Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED0250FEEAC1B1D42287348AAF8D704 /* _Resolver.swift */; };
 		A27BB818DB384FE4A607C6E3946EFC55 /* FetchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF30279E7CF6DE10F209D0FD4C91E8D /* FetchResult.swift */; };
 		A4D25312A0CC165FB3DE4A4C7B499A25 /* Container.Arguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED680E1B874778942A692FC3C8E7489 /* Container.Arguments.swift */; };
+		A5767E9D9A13F2FEE594CFF67DDA44F3 /* Pods-EmailFinderTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF133F4DE39D300CF1AF85ED6ADFB7E9 /* Pods-EmailFinderTests-dummy.m */; };
 		A749C4D3FF2A4AF126F66C600252FE1A /* MailPart+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3B1F1A76EABB6542B1CB3E7FA639D2 /* MailPart+Parsing.swift */; };
 		AA3793CECFAC316243689B4CE15A6A44 /* SpinLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B7D47EB3E4F2C806567F057114E93D /* SpinLock.swift */; };
 		ADC6E6CDB67BF72551533BC4E4555213 /* IMAPSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E02F024B45BA812AF29312B4525756 /* IMAPSession.swift */; };
 		ADC9C062ED7E21B8581EBD3A277D5037 /* FunctionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1A6349EEDACC44EA37652EEFA940E3 /* FunctionType.swift */; };
 		AFE71F968B696E07B462831033ABC80C /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCAC716A2B58393FEA43344EDF9F01C /* Util.swift */; };
 		B03463759CFDAE9D9412A87358AB2A83 /* Container.TypeForwarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ABEC0CCD1193ED99A0DA71C4EC952B /* Container.TypeForwarding.swift */; };
-		B3B192B04679FA721960120E25B914B8 /* Pods-EmailFinderTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 43F9625A2EE90C19D80A3B121D0F4CB3 /* Pods-EmailFinderTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8761276C959268E69BE09250B9524BE /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294DB1E9AE9056437BDC146701E33F63 /* Container.swift */; };
 		B924161D2F87B859ECFA9568E0467A69 /* IMAPSession+Folder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142787780DC956387AF57C5C3EF957DA /* IMAPSession+Folder.swift */; };
 		BFE213244C740D20A8299107F05430F8 /* Behavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = C153C9AD89F455848445FDF5EFEFA784 /* Behavior.swift */; };
 		C18F8521DF033317A95718D2699FCD30 /* IMAPCapability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BDC6769E94B169096ACBA2D8187F38 /* IMAPCapability.swift */; };
 		CA3F0FC49C8C96F986BC4B7E0EDEA044 /* Swinject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D36BCCB415F28FDE7E6BC8CA5A22AF /* Swinject-dummy.m */; };
 		CCA64AF64DA90EF4D29337BE7371B284 /* IMFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933C75586D77C81CE3E2045834D00B1 /* IMFError.swift */; };
+		D0832AF6ED08142BA4AA10ACE162C49D /* Pods-EmailFinder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C414F32F750EBCBFD30D0CDB1618E9A /* Pods-EmailFinder-dummy.m */; };
 		DBDBE4FD34ED818DFF510BA4874FB112 /* Address+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DDF0151E050480B83782D88224D1B3 /* Address+Parsing.swift */; };
 		E186B7C4EE38640DE8A407D3ADA3E743 /* Container.Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CB1C43E8A5648790B34146A7955E9B /* Container.Logging.swift */; };
 		E331A92EA4DB6068725824A69ADFA323 /* ContentDisposition+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F8EF97EDDD94B4BE0B987C1888F91D /* ContentDisposition+Parsing.swift */; };
 		EBF9BBEECF9183A5D715535619D1AE0F /* IMAPSession+List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB312A058B856207968A659790CE9E6 /* IMAPSession+List.swift */; };
 		ED2A123CB0812C9379F3DFA33007FD54 /* IMAPSession+Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC530B61401999BADD3213F0F3D20C /* IMAPSession+Move.swift */; };
 		F43ADE16043732E2543532E1AA752925 /* MimeType+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00E92355230FC7C48115483562C93B9 /* MimeType+Parsing.swift */; };
+		F866FDD859364B5EE130643C3BC60F7E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */; };
 		FB0DCDCDEAE8383DE1D9EA74E68F2325 /* Postal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAFABDB4070A1F35E799D3B44D9FD1C /* Postal.swift */; };
 		FBB255A81067F582B9A09A45C57FBED1 /* IMAPNamespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD23638B79D8E73DD220CFA771DB528 /* IMAPNamespace.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		294F088F94A2D58781D46948F7845577 /* PBXContainerItemProxy */ = {
+		34C1712C0D98AC61172549954468F848 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 014CE582943DE44B473C7E70A5897BE2;
 			remoteInfo = Postal;
 		};
-		745AEE6C2A014EA38883B0712593FEBF /* PBXContainerItemProxy */ = {
+		A00985FF434F66A6CFDC58280A026F64 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 46065AF968A5A92D450BB21F7F24367D;
 			remoteInfo = Swinject;
 		};
-		8CC0558FA50D07423583E54E7B7F1851 /* PBXContainerItemProxy */ = {
+		A0655DAE6333885F557F1D60458C89F2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -178,6 +178,7 @@
 		BB9D57BE38543306739C4CCC247EABDF /* InstanceWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InstanceWrapper.swift; path = Sources/InstanceWrapper.swift; sourceTree = "<group>"; };
 		BC86DE56C676F16FD364D4257DB621E1 /* CertificateUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CertificateUtils.swift; path = Postal/CertificateUtils.swift; sourceTree = "<group>"; };
 		BF0098C1BA61D24A06F4124E736DF9BA /* Swinject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Swinject.debug.xcconfig; sourceTree = "<group>"; };
+		C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		C153C9AD89F455848445FDF5EFEFA784 /* Behavior.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Behavior.swift; path = Sources/Behavior.swift; sourceTree = "<group>"; };
 		CA6F1157D18511E7C2F0B60B3C5E741A /* SynchronizedResolver.Arguments.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SynchronizedResolver.Arguments.swift; path = Sources/SynchronizedResolver.Arguments.swift; sourceTree = "<group>"; };
 		CF133F4DE39D300CF1AF85ED6ADFB7E9 /* Pods-EmailFinderTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EmailFinderTests-dummy.m"; sourceTree = "<group>"; };
@@ -194,7 +195,6 @@
 		F25AB861594F13FEAC965625C1CF582A /* UnavailableItems.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnavailableItems.swift; path = Sources/UnavailableItems.swift; sourceTree = "<group>"; };
 		F37507664C12FE7E7DC7DE981C62058B /* Postal-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Postal-prefix.pch"; sourceTree = "<group>"; };
 		F3C6EBF5142133A653339F9421617804 /* Extension+Parsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Extension+Parsing.swift"; path = "Postal/Extension+Parsing.swift"; sourceTree = "<group>"; };
-		F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		FB345E607C57CE028CD4DEDB5B7EDE62 /* SynchronizedResolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SynchronizedResolver.swift; path = Sources/SynchronizedResolver.swift; sourceTree = "<group>"; };
 		FBF30279E7CF6DE10F209D0FD4C91E8D /* FetchResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FetchResult.swift; path = Postal/FetchResult.swift; sourceTree = "<group>"; };
 		FED680E1B874778942A692FC3C8E7489 /* Container.Arguments.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Container.Arguments.swift; path = Sources/Container.Arguments.swift; sourceTree = "<group>"; };
@@ -206,15 +206,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				620F692A24865770EA9AE6BDAEA40D0D /* Cocoa.framework in Frameworks */,
+				F866FDD859364B5EE130643C3BC60F7E /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8889BF4179AEE960D0BE42762C3A9DE2 /* Frameworks */ = {
+		875C368F6A40CB62CB0C9ACA22992452 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				713629BDD2EB72B1D5E25AC2836A7F20 /* Cocoa.framework in Frameworks */,
+				9E29E464B5B0FB7F5B675A1894A9C68D /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,15 +222,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6139236F1E6F367EA321E01B703E183E /* Cocoa.framework in Frameworks */,
+				7EC63C0D568E7F6470C78A77AFB84D45 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A98B87DFAF9B412845EAA73B121BEB92 /* Frameworks */ = {
+		EDED6E5380F8CC3E7E27414601944EFE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B5522003526B92A73CF764CDDE64758 /* Cocoa.framework in Frameworks */,
+				241BA78936A774CB065EB51493C429F9 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,14 +329,6 @@
 			path = "../Target Support Files/Swinject";
 			sourceTree = "<group>";
 		};
-		CBD43E0947D94E318A0ED1350CFF29ED /* OS X */ = {
-			isa = PBXGroup;
-			children = (
-				F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */,
-			);
-			name = "OS X";
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
@@ -394,9 +386,17 @@
 		E0A1E60606E0BF6E2E10F1F01350DFE8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CBD43E0947D94E318A0ED1350CFF29ED /* OS X */,
+				E2A8756CA1FF5258A0344D53C5C60EC1 /* OS X */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2A8756CA1FF5258A0344D53C5C60EC1 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */,
+			);
+			name = "OS X";
 			sourceTree = "<group>";
 		};
 		F1A584D21E341BA62ED2298F80006626 /* Swinject */ = {
@@ -435,6 +435,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		3E65EE0A60EA0B6B8A94A2858D370D24 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D9264F4F77CFB359468F8803118E4B9 /* Pods-EmailFinder-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41BA82CA46362B8CF84B5CA4EF9742A3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -443,19 +451,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7894DC71B53A348DDE173979131B51D7 /* Headers */ = {
+		B270220BD7F4EDE579042349A5A48459 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3B192B04679FA721960120E25B914B8 /* Pods-EmailFinderTests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AA1ADDA0DC60193E869C314366649FFC /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				90581E8A3AB126FD958E6283E49928CB /* Pods-EmailFinder-umbrella.h in Headers */,
+				993A48F1310FF2646F98738D4CE058A5 /* Pods-EmailFinderTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,17 +509,17 @@
 		};
 		DBBC21204B8D92E740F9D82399C6E40D /* Pods-EmailFinderTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1605A2921CE0EB21B54501F5B014757D /* Build configuration list for PBXNativeTarget "Pods-EmailFinderTests" */;
+			buildConfigurationList = A1D46693746C95C1812493CCBCDC32F8 /* Build configuration list for PBXNativeTarget "Pods-EmailFinderTests" */;
 			buildPhases = (
-				7894DC71B53A348DDE173979131B51D7 /* Headers */,
-				B1D45E26A05790B3A8061EE3407C8FFF /* Sources */,
-				8889BF4179AEE960D0BE42762C3A9DE2 /* Frameworks */,
-				EEC569037BA9810074C4B9FE74C67FDB /* Resources */,
+				B270220BD7F4EDE579042349A5A48459 /* Headers */,
+				9A9B47EFD9EC030200AA3522C907C829 /* Sources */,
+				EDED6E5380F8CC3E7E27414601944EFE /* Frameworks */,
+				F190F1DBD6ECC0077CAA7A94196372EC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				71CB9F41AAE2C98FD0913C33AF56747F /* PBXTargetDependency */,
+				AE62AEB951335BCC64143CB8D3E9A50F /* PBXTargetDependency */,
 			);
 			name = "Pods-EmailFinderTests";
 			productName = "Pods-EmailFinderTests";
@@ -528,18 +528,18 @@
 		};
 		F35AA12F9D1A9A2C1C47695761724D85 /* Pods-EmailFinder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4E07703FDBD8A7F81DA3ADAA50DB1E04 /* Build configuration list for PBXNativeTarget "Pods-EmailFinder" */;
+			buildConfigurationList = 75D67DEA30215666038A0609CB5818FD /* Build configuration list for PBXNativeTarget "Pods-EmailFinder" */;
 			buildPhases = (
-				AA1ADDA0DC60193E869C314366649FFC /* Headers */,
-				953352362401F23CAE5DB79D2682005C /* Sources */,
-				A98B87DFAF9B412845EAA73B121BEB92 /* Frameworks */,
-				793DD76612B27B96B5C92346CD3ADAE7 /* Resources */,
+				3E65EE0A60EA0B6B8A94A2858D370D24 /* Headers */,
+				3435BC4EFCE81B4B5EA86336E66C66E4 /* Sources */,
+				875C368F6A40CB62CB0C9ACA22992452 /* Frameworks */,
+				1D8B4C652761AA4465B997CCFD895371 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F432E5F3CF1977D2175007307D335B49 /* PBXTargetDependency */,
-				8C98947487D501C37112AE11AAD398F9 /* PBXTargetDependency */,
+				B471B5D69411437DB253160B67E2899A /* PBXTargetDependency */,
+				5385A547C419DBDF8B01C9934ACD4270 /* PBXTargetDependency */,
 			);
 			name = "Pods-EmailFinder";
 			productName = "Pods-EmailFinder";
@@ -577,6 +577,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1D8B4C652761AA4465B997CCFD895371 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		39AE1935A8F1FFAF3EA86A36F1F7BA23 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -591,14 +598,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		793DD76612B27B96B5C92346CD3ADAE7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EEC569037BA9810074C4B9FE74C67FDB /* Resources */ = {
+		F190F1DBD6ECC0077CAA7A94196372EC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -608,11 +608,11 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		953352362401F23CAE5DB79D2682005C /* Sources */ = {
+		3435BC4EFCE81B4B5EA86336E66C66E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98E449215016363CA0F9AA63F37DB692 /* Pods-EmailFinder-dummy.m in Sources */,
+				D0832AF6ED08142BA4AA10ACE162C49D /* Pods-EmailFinder-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,11 +647,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B1D45E26A05790B3A8061EE3407C8FFF /* Sources */ = {
+		9A9B47EFD9EC030200AA3522C907C829 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57D58444379866B44A4D71BB26F0A0CB /* Pods-EmailFinderTests-dummy.m in Sources */,
+				A5767E9D9A13F2FEE594CFF67DDA44F3 /* Pods-EmailFinderTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -700,31 +700,70 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		71CB9F41AAE2C98FD0913C33AF56747F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-EmailFinder";
-			target = F35AA12F9D1A9A2C1C47695761724D85 /* Pods-EmailFinder */;
-			targetProxy = 8CC0558FA50D07423583E54E7B7F1851 /* PBXContainerItemProxy */;
-		};
-		8C98947487D501C37112AE11AAD398F9 /* PBXTargetDependency */ = {
+		5385A547C419DBDF8B01C9934ACD4270 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Swinject;
 			target = 46065AF968A5A92D450BB21F7F24367D /* Swinject */;
-			targetProxy = 745AEE6C2A014EA38883B0712593FEBF /* PBXContainerItemProxy */;
+			targetProxy = A00985FF434F66A6CFDC58280A026F64 /* PBXContainerItemProxy */;
 		};
-		F432E5F3CF1977D2175007307D335B49 /* PBXTargetDependency */ = {
+		AE62AEB951335BCC64143CB8D3E9A50F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-EmailFinder";
+			target = F35AA12F9D1A9A2C1C47695761724D85 /* Pods-EmailFinder */;
+			targetProxy = A0655DAE6333885F557F1D60458C89F2 /* PBXContainerItemProxy */;
+		};
+		B471B5D69411437DB253160B67E2899A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Postal;
 			target = 014CE582943DE44B473C7E70A5897BE2 /* Postal */;
-			targetProxy = 294F088F94A2D58781D46948F7845577 /* PBXContainerItemProxy */;
+			targetProxy = 34C1712C0D98AC61172549954468F848 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0253CCDEE11BB2E876CF8C6EBDC6E1A8 /* Release */ = {
+		0637AABD5F63574C10B74C38D6347D11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 070B2281B9146FE5CCF078FDBC088AB7 /* Pods-EmailFinderTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EmailFinderTests/Pods-EmailFinderTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = "Target Support Files/Pods-EmailFinderTests/Pods-EmailFinderTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0AE172D8F2A4843BFACAD21A0ED26541 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -747,6 +786,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -781,14 +821,12 @@
 			};
 			name = Release;
 		};
-		048F60906B1BE1C165838E8356DC210F /* Release */ = {
+		2D98320FD616EA7D747DD439E431F8B0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02BF2F97C05C4A66C263E59F9AB71342 /* Pods-EmailFinderTests.release.xcconfig */;
+			baseConfigurationReference = 7608FFB8931E45E454A63144AAFE1375 /* Postal.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -798,7 +836,43 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Postal/Postal-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Postal/Postal-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Postal/Postal.modulemap";
+				PRODUCT_MODULE_NAME = Postal;
+				PRODUCT_NAME = Postal;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2FBA24436073DD48E1E86F0162BD1FB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02BF2F97C05C4A66C263E59F9AB71342 /* Pods-EmailFinderTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-EmailFinderTests/Pods-EmailFinderTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -821,14 +895,12 @@
 			};
 			name = Release;
 		};
-		288C3B8C79EE23A11FF319505A9AFB2B /* Debug */ = {
+		3AA906D41975B31F48127FFD8BD4F7AD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 070B2281B9146FE5CCF078FDBC088AB7 /* Pods-EmailFinderTests.debug.xcconfig */;
+			baseConfigurationReference = 82745A84873A894D629270A8896022B4 /* Postal.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -838,37 +910,33 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-EmailFinderTests/Pods-EmailFinderTests-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Postal/Postal-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Postal/Postal-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MODULEMAP_FILE = "Target Support Files/Pods-EmailFinderTests/Pods-EmailFinderTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Postal/Postal.modulemap";
+				PRODUCT_MODULE_NAME = Postal;
+				PRODUCT_NAME = Postal;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		3B1399BBD8F0A1B54067038469F1D691 /* Debug */ = {
+		64F509D5C7008BC18D4EDD7B68406C46 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 864A7ADF76ABC22FFC3194C9F2612717 /* Pods-EmailFinder.debug.xcconfig */;
+			baseConfigurationReference = D651E01AA14243B27F869B93CBA70558 /* Swinject.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -878,7 +946,43 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Swinject/Swinject-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Swinject/Swinject-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Swinject/Swinject.modulemap";
+				PRODUCT_MODULE_NAME = Swinject;
+				PRODUCT_NAME = Swinject;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		70D67CEA28F2AA38D7C9EBFB1D99FEA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 864A7ADF76ABC22FFC3194C9F2612717 /* Pods-EmailFinder.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-EmailFinder/Pods-EmailFinder-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -901,10 +1005,47 @@
 			};
 			name = Debug;
 		};
-		6DC6BBF7D2A721A4E91A75A28EEB8E83 /* Debug */ = {
+		806A35D2FF86E2B05A6997CB46ED7DBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF0098C1BA61D24A06F4124E736DF9BA /* Swinject.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Swinject/Swinject-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Swinject/Swinject-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Swinject/Swinject.modulemap";
+				PRODUCT_MODULE_NAME = Swinject;
+				PRODUCT_NAME = Swinject;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		808E544862838153672EA12FCC127D9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -927,6 +1068,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -965,14 +1107,13 @@
 			};
 			name = Debug;
 		};
-		781DDA335176F1FE72842FAC421260EC /* Release */ = {
+		822EE5283D3FBB6F5EBE5BDC286247C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9934C118BDE5E0A2C1D617BB73152953 /* Pods-EmailFinder.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -982,7 +1123,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "Target Support Files/Pods-EmailFinder/Pods-EmailFinder-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1005,184 +1145,14 @@
 			};
 			name = Release;
 		};
-		8B0A68613C94116A2A5DA445C352A773 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 82745A84873A894D629270A8896022B4 /* Postal.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/Postal/Postal-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Postal/Postal-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/Postal/Postal.modulemap";
-				PRODUCT_MODULE_NAME = Postal;
-				PRODUCT_NAME = Postal;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		94F4DEE70D5DFB4AB12362C9E9B6B8FD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF0098C1BA61D24A06F4124E736DF9BA /* Swinject.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/Swinject/Swinject-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Swinject/Swinject-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/Swinject/Swinject.modulemap";
-				PRODUCT_MODULE_NAME = Swinject;
-				PRODUCT_NAME = Swinject;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D954A0F78D306E5843F77B5886432871 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D651E01AA14243B27F869B93CBA70558 /* Swinject.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/Swinject/Swinject-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Swinject/Swinject-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/Swinject/Swinject.modulemap";
-				PRODUCT_MODULE_NAME = Swinject;
-				PRODUCT_NAME = Swinject;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		EB8E1C6D8AF44E12CFBD3A14F88C5DAD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7608FFB8931E45E454A63144AAFE1375 /* Postal.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/Postal/Postal-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Postal/Postal-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/Postal/Postal.modulemap";
-				PRODUCT_MODULE_NAME = Postal;
-				PRODUCT_NAME = Postal;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1605A2921CE0EB21B54501F5B014757D /* Build configuration list for PBXNativeTarget "Pods-EmailFinderTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				288C3B8C79EE23A11FF319505A9AFB2B /* Debug */,
-				048F60906B1BE1C165838E8356DC210F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6DC6BBF7D2A721A4E91A75A28EEB8E83 /* Debug */,
-				0253CCDEE11BB2E876CF8C6EBDC6E1A8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4E07703FDBD8A7F81DA3ADAA50DB1E04 /* Build configuration list for PBXNativeTarget "Pods-EmailFinder" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3B1399BBD8F0A1B54067038469F1D691 /* Debug */,
-				781DDA335176F1FE72842FAC421260EC /* Release */,
+				808E544862838153672EA12FCC127D9A /* Debug */,
+				0AE172D8F2A4843BFACAD21A0ED26541 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1190,8 +1160,26 @@
 		60E9C8ECB8CA0FC2E5B9016923ED6B59 /* Build configuration list for PBXNativeTarget "Swinject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				94F4DEE70D5DFB4AB12362C9E9B6B8FD /* Debug */,
-				D954A0F78D306E5843F77B5886432871 /* Release */,
+				806A35D2FF86E2B05A6997CB46ED7DBD /* Debug */,
+				64F509D5C7008BC18D4EDD7B68406C46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75D67DEA30215666038A0609CB5818FD /* Build configuration list for PBXNativeTarget "Pods-EmailFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70D67CEA28F2AA38D7C9EBFB1D99FEA4 /* Debug */,
+				822EE5283D3FBB6F5EBE5BDC286247C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1D46693746C95C1812493CCBCDC32F8 /* Build configuration list for PBXNativeTarget "Pods-EmailFinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0637AABD5F63574C10B74C38D6347D11 /* Debug */,
+				2FBA24436073DD48E1E86F0162BD1FB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1199,8 +1187,8 @@
 		EC45B01290789664214BDAAA65BA065E /* Build configuration list for PBXNativeTarget "Postal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8B0A68613C94116A2A5DA445C352A773 /* Debug */,
-				EB8E1C6D8AF44E12CFBD3A14F88C5DAD /* Release */,
+				3AA906D41975B31F48127FFD8BD4F7AD /* Debug */,
+				2D98320FD616EA7D747DD439E431F8B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

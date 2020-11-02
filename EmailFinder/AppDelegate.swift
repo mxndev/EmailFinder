@@ -26,8 +26,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // start synchronizer
         mailSynchronizer.setSynchronizationMode(mode: AppDelegate.synchronizeMode)
         mailSynchronizer.runSynchronizer(semaphore: nil)
-        
-        RunLoop.main.run()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

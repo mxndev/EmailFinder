@@ -1,46 +1,42 @@
+### CocoaPods ###
+## CocoaPods GitIgnore Template
 
-.DS_Store
-.Trashes
-.localized
+# CocoaPods - Only use to conserve bandwidth / Save time on Pushing
+#           - Also handy if you have a large number of dependant pods
+#           - AS PER https://guides.cocoapods.org/using/using-cocoapods.html NEVER IGNORE THE LOCK FILE
+Pods/
 
-build
-.build
-xcuserdata
-DerivedData
+### Xcode ###
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
-*.mode1v3
-*.mode2v3
-*.perspectivev3
-*.pbxuser
-*.xccheckout
-*.xcuserstate
+## User settings
+xcuserdata/
+
+## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
 *.xcscmblueprint
+*.xccheckout
+
+## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
+build/
+DerivedData/
 *.moved-aside
-*.hmap
-*.o
-*.hmap
-*.ipa
-*.dSYM.zip
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
 
-timeline.xctimeline
-playground.xcworkspace
+## Gcc Patch
+/*.gcno
 
-.idea
-*.iml
-
-Pods
-Carthage
-Packages
-
-fastlane/report.xml
-fastlane/Preview.html
-fastlane/screenshots
-fastlane/test_output
-
-# AppCode private files
-.idea
-clangScanBuildReports/
-doc.html
-
-# Ignore GTM container - right one should be copied during build phase
-WMSApp/Resources/GTM/container/*.json
+### Xcode Patch ###
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+**/xcshareddata/WorkspaceSettings.xcsettings
